@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+.ourValueCard {
+  padding: 0 70px;
+  text-align: center;
+}
+.ourValueCard p {
+  color: var(--text, #ececec);
+  text-align: center;
+  font-family: "Aleo", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.ourMissionCard {
+  color: var(--text, #ececec);
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 166.667% */
+  padding: 0 100px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .serviceHeader svg {
+    display: none;
+  }
+  .ourValueCard {
+    padding: 0 10px;
+    text-align: center;
+  }
+  .ourValueCard p {
+    color: var(--text, #ececec);
+    text-align: center;
+    font-family: "Aleo", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .ourMissionCard {
+    color: var(--text, #ececec);
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 166.667% */
+    padding: 0 10px;
+    text-align: left;
+  }
+}/*# sourceMappingURL=aboutus.css.map */

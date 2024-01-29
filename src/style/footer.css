@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+.footerLogo {
+  width: 147px;
+  height: 150px;
+  margin-top: 50px;
+}
+
+.footerText {
+  color: #222222;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+}
+
+.footerservice {
+  color: #263238;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 87.5% */
+}
+.footerservice p {
+  font-family: "Aleo", sans-serif;
+  font-size: 32px;
+}
+.footerservice ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footerservice li {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.socialmediaicons img {
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .footerservice p {
+    font-size: 20px;
+  }
+  .footerservice li {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+body {
+  background: #222222;
+}
+
+.headerContainer {
+  text-align: center;
+}
+
+.text {
+  color: #fff;
+  font-family: "Aleo", sans-serif;
+  line-height: normal;
+  margin: 0;
+}
+
+.header {
+  font-size: 96px;
+}
+
+.subHeader p,
+.serviceHeader p {
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+.subHeader span,
+.serviceHeader span {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+}
+.subHeader .connectbtn,
+.serviceHeader .connectbtn {
+  background-color: #75abfe;
+  color: #222222;
+  font-family: "Aleo", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  position: relative;
+}
+.subHeader .connectbtn::after,
+.serviceHeader .connectbtn::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border-radius: 4px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.subHeaderContainer {
+  position: relative;
+}
+
+.sprinkle {
+  position: absolute;
+  top: -80px;
+  right: 0;
+}
+
+.card {
+  height: 520px;
+  background-color: #263238;
+  text-align: center;
+  margin: 5px;
+}
+.card img {
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+}
+.card .card-title {
+  color: #fff;
+  font-size: 24px;
+  margin: 0;
+  padding: 5px 70px;
+}
+.card .card-text {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 30px;
+}
+
+.imageContainer {
+  width: 350px;
+  height: 350px;
+  position: relative;
+}
+.imageContainer div {
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.imageContainer .one {
+  top: 0;
+  left: 0;
+}
+.imageContainer .two {
+  top: 0;
+  right: 0;
+}
+.imageContainer .three {
+  bottom: 0;
+  left: 0;
+}
+.imageContainer .four {
+  bottom: 0;
+  right: 0;
+}
+.imageContainer .five {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.one::after {
+  content: "";
+  width: 0px;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.courselContainer {
+  position: relative;
+}
+
+.courselbackground {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.coursel {
+  width: 286px;
+  height: 550px;
+  background-color: #fff;
+  border-radius: 50px;
+  border: 5px solid #000;
+  margin: auto;
+}
+
+.coursel-item {
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.coursel-item p {
+  color: #263238;
+  font-family: "Heebo", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 200%; /* 37.5px */
+  letter-spacing: 0.5px;
+  text-decoration: underline;
+  text-underline-offset: 20px;
+}
+.coursel-item span {
+  color: #263238;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 0 30px;
+}
+.coursel-item img {
+  width: 100px;
+  height: 100px;
+}
+.coursel-item button {
+  display: inline-flex;
+  padding: 10px 20px;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--text, #181b1d);
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 21px */
+  letter-spacing: 0.7px;
+  border-radius: 100px;
+  border: 2px solid var(--text, #181b1d);
+}
+
+.coursel-item.one,
+.coursel-item.two {
+  display: flex;
+}
+
+.accordianHeader {
+  color: #000;
+  font-family: "Aleo", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  margin-left: 50px;
+}
+
+.accordiantext {
+  color: #000;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 0 50px;
+}
+
+@media (max-width: 768px) {
+  .accordianHeader {
+    font-size: 14px;
+    margin-left: 0;
+  }
+  .accordiantext {
+    font-size: 14px;
+  }
+}
+.left {
+  margin-top: -100px;
+  margin-left: 20px;
+}
+
+.right {
+  margin-bottom: -100px;
+  margin-right: 20px;
+}
+
+.inputLabel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Aleo", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.inputLabel span {
+  margin-left: 30px;
+}
+
+.form {
+  text-align: center;
+}
+.form .connectbtn {
+  background-color: #75abfe;
+  color: #222222;
+  font-family: "Aleo", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 20px;
+  padding: 10px 20px;
+  position: relative;
+}
+.form .connectbtn::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border-radius: 4px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-color: #ececec;
+  overflow: hidden;
+}
+
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  background: #ececec;
+  color: #222222;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  color: #222222;
+  font-family: "Aleo", sans-serif;
+  font-size: 18px;
+}
+
+.input-field:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.input-field::-moz-placeholder {
+  color: #222222;
+  font-family: "Aleo", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.input-field::placeholder {
+  color: #222222;
+  font-family: "Aleo", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media (max-width: 768px) {
+  .text {
+    font-size: 10px;
+  }
+  .header {
+    font-size: 48px;
+  }
+  .subHeader p,
+  .serviceHeader p {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  .subHeader span,
+  .serviceHeader span {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+  }
+  .subHeader .connectbtn,
+  .serviceHeader .connectbtn {
+    background-color: #75abfe;
+    color: #222222;
+    font-family: "Aleo", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    position: relative;
+  }
+  .subHeader .connectbtn::after,
+  .serviceHeader .connectbtn::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 4px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: -1;
+    opacity: 0.8;
+  }
+}
+.stickOne {
+  background-color: wheat;
+  width: 100px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}/*# sourceMappingURL=homepage.css.map */

@@ -1,0 +1,61 @@
+@import "./variable.scss";
+
+.ourValueCard {
+  padding: 0 70px;
+  text-align: center;
+  p {
+    color: var(--text, #ececec);
+    text-align: center;
+    font-family: $textFont;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+.ourMissionCard {
+  color: var(--text, #ececec);
+  font-family: $PoppinsFont;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 166.667% */
+
+  padding: 0 100px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .serviceHeader {
+    svg {
+      display: none;
+    }
+  }
+
+  .ourValueCard {
+    padding: 0 10px;
+    text-align: center;
+    p {
+      color: var(--text, #ececec);
+      text-align: center;
+      font-family: $textFont;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  .ourMissionCard {
+    color: var(--text, #ececec);
+    font-family: $PoppinsFont;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 166.667% */
+
+    padding: 0 10px;
+    text-align: left;
+  }
+}
