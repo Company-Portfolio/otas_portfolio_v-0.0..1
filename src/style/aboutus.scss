@@ -26,6 +26,52 @@
   text-align: left;
 }
 
+.picture {
+  margin-top: 150px;
+}
+
+.pictureContainer {
+  position: relative;
+  width: 480px;
+  height: 480px;
+}
+
+.picture2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 280px;
+  height: 280px;
+  border-radius: 8px;
+}
+
+.picture3 {
+  position: absolute;
+  left: 50px;
+  top: 20px;
+  width: 100px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.picture4 {
+  position: absolute;
+  right: 100px;
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.picture5 {
+  position: absolute;
+  right: 0;
+  top: 180px;
+  right: 80px;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+}
+
 @media (max-width: 768px) {
   .serviceHeader {
     svg {
@@ -57,5 +103,11 @@
 
     padding: 0 10px;
     text-align: left;
+  }
+
+  .picture {
+    width: 340px;
+    padding-top: 20px;
+    margin: 0;
   }
 }

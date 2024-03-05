@@ -62,8 +62,12 @@ function Footer() {
         <div className="footerservice">
           <p>Follow Us For Updates</p>
           <div className="socialmediaicons">
-            <img src={facebook} alt="facebook" />
-            <img src={linkedin} alt="linkedin" />
+            <a href="https://www.facebook.com/otastechsolution">
+              <img src={facebook} alt="facebook" />
+            </a>
+            <a href="https://www.linkedin.com/company/otas-tech-solution/">
+              <img src={linkedin} alt="linkedin" />
+            </a>
           </div>
         </div>
       </Grid>

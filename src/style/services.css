@@ -10,4 +10,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.serviceimgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  width: 340px;
+}
+
+.app img {
+  width: inherit;
+  height: inherit;
 }/*# sourceMappingURL=services.css.map */

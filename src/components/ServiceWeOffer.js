@@ -1,5 +1,9 @@
 import React from "react";
 import { Grid } from "@mui/material";
+import { Link } from "react-router-dom";
+import webimg from "./../assets/img/webimg.png";
+import appimg from "./../assets/img/appimg.png";
+import free from "./../assets/img/freeimg.png";
 
 function ServiceWeOffer() {
   return (
@@ -23,37 +27,6 @@ function ServiceWeOffer() {
           ensures each product aligns perfectly with your goals.
         </span>
       </Grid>
-      <Grid item xs={12} sx={{ display: { xs: "block", md: "none" } }}>
-        <div
-          style={{
-            backgroundColor: "#75ABFE",
-            padding: "20px",
-            borderRadius: "10px",
-          }}
-        >
-          <p className="text">Web Development</p>
-        </div>
-        <div
-          style={{
-            backgroundColor: "#75ABFE",
-            padding: "20px",
-            borderRadius: "10px",
-            marginTop: "20px",
-            marginBottom: "20px",
-          }}
-        >
-          <p className="text">App Development</p>
-        </div>
-        <div
-          style={{
-            backgroundColor: "#75ABFE",
-            padding: "20px",
-            borderRadius: "10px",
-          }}
-        >
-          <p className="text">Free Consulting</p>
-        </div>
-      </Grid>
       <Grid
         item
         xs={12}
@@ -62,12 +35,15 @@ function ServiceWeOffer() {
           margin: "auto",
           justifyContent: "center",
           alignItems: "center",
-          display: { xs: "none", md: "flex" },
+          display: { xs: "block", md: "flex" },
         }}
       >
         <Grid item xs={12} lg={4}>
           <div className="card">
-            <img src="https://picsum.photos/id/1005/200/300" alt="card" />
+            <div className="card-imgs">
+              <img src={webimg} alt="card" />
+            </div>
+
             <div className="card-body">
               <h5 className="card-title">Web Development</h5>
               <p className="card-text">
@@ -80,7 +56,9 @@ function ServiceWeOffer() {
         </Grid>
         <Grid item xs={12} lg={4}>
           <div className="card">
-            <img src="https://picsum.photos/id/1005/200/300" alt="card" />
+            <div className="app-imgs">
+              <img src={appimg} alt="card" />
+            </div>
             <div className="card-body">
               <h5 className="card-title">App Development</h5>
               <p className="card-text">
@@ -92,9 +70,11 @@ function ServiceWeOffer() {
         </Grid>
         <Grid item xs={12} lg={4}>
           <div className="card">
-            <img src="https://picsum.photos/id/1005/200/300" alt="card" />
+            <div className="card-imgs">
+              <img src={free} alt="card" />
+            </div>
             <div className="card-body">
-              <h5 className="card-title">Free Consulting Service</h5>
+              <h5 className="card-title">Free Consulting</h5>
               <p className="card-text">
                 Our free consultations delve deep into your business goals,
                 providing customized strategies and actionable advice to ...

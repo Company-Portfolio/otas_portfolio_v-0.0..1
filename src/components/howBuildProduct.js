@@ -38,7 +38,11 @@ function HowBuildProduct() {
   return (
     <Grid
       container
-      sx={{ marginTop: "100px", marginX: { xs: "10px", md: "0" } }}
+      sx={{
+        marginTop: "100px",
+        marginX: { xs: "10px", md: "0" },
+        display: { xs: "none", md: "block" },
+      }}
     >
       <Grid
         item
@@ -108,7 +112,7 @@ function HowBuildProduct() {
                     development process.
                   </span>
                   <img src={image1} alt="gather" />
-                  <button>Connect With us</button>
+                  {/* <button>Connect With us</button> */}
                 </div>
               ) : null}
 
@@ -122,7 +126,7 @@ function HowBuildProduct() {
                     foundation for a compelling product.
                   </span>
                   <img src={image2} alt="gather" />
-                  <button>Connect With us</button>
+                  {/* <button>Connect With us</button> */}
                 </div>
               ) : null}
 
@@ -137,7 +141,7 @@ function HowBuildProduct() {
                     at every step.
                   </span>
                   <img src={image3} alt="gather" />
-                  <button>Connect With us</button>
+                  {/* <button>Connect With us</button> */}
                 </div>
               ) : null}
 
@@ -152,7 +156,7 @@ function HowBuildProduct() {
                     before deployment.
                   </span>
                   <img src={image4} alt="gather" />
-                  <button>Connect With us</button>
+                  {/* <button>Connect With us</button> */}
                 </div>
               ) : null}
 
@@ -166,7 +170,7 @@ function HowBuildProduct() {
                     operations with its innovative capabilities.
                   </span>
                   <img src={image5} alt="gather" />
-                  <button>Connect With us</button>
+                  {/* <button>Connect With us</button> */}
                 </div>
               ) : null}
             </div>

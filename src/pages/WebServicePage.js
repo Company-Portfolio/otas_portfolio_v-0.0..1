@@ -12,7 +12,7 @@ function WebServicePage() {
     <Box component="div">
       <Grid container>
         <WebService />
-        <WebPackage />
+        {/* <WebPackage /> */}
         <WebFaq />
         {/* <ConnectWithus /> */}
 

@@ -15,6 +15,7 @@ body {
   font-family: "Aleo", sans-serif;
   line-height: normal;
   margin: 0;
+  text-decoration: none;
 }
 
 .header {
@@ -40,10 +41,14 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  display: block;
   margin-top: 30px;
   padding: 10px 20px;
   position: relative;
+}
+.subHeader .connectbtn a,
+.serviceHeader .connectbtn a {
+  text-decoration: none;
+  color: #252525;
 }
 .subHeader .connectbtn::after,
 .serviceHeader .connectbtn::after {
@@ -53,8 +58,8 @@ body {
   background-color: black;
   border-radius: 4px;
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 10px;
+  left: 10px;
   z-index: -1;
   opacity: 0.8;
 }
@@ -70,27 +75,25 @@ body {
 }
 
 .card {
-  height: 520px;
   background-color: #263238;
+  border-radius: 20px;
   text-align: center;
   margin: 5px;
 }
 .card img {
   padding: 20px;
-  width: 200px;
-  height: 200px;
 }
 .card .card-title {
   color: #fff;
-  font-size: 24px;
+  font-size: 28px;
   margin: 0;
   padding: 5px 70px;
 }
 .card .card-text {
   color: #fff;
-  font-size: 16px;
+  font-size: 19px;
   font-family: "Poppins", sans-serif;
-  padding: 10px 30px;
+  padding: 20px 60px;
 }
 
 .imageContainer {
@@ -356,12 +359,23 @@ body {
   line-height: normal;
 }
 
+.card-imgs img {
+  width: 68px;
+  height: 68px;
+}
+
+.app-imgs img {
+  width: 108px;
+  height: 68px;
+}
+
 @media (max-width: 768px) {
   .text {
-    font-size: 10px;
+    font-size: 14px;
+    text-decoration: none;
   }
   .header {
-    font-size: 48px;
+    font-size: 28px;
   }
   .subHeader p,
   .serviceHeader p {
@@ -378,11 +392,10 @@ body {
     background-color: #75abfe;
     color: #222222;
     font-family: "Aleo", sans-serif;
-    font-size: 24px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    display: block;
     margin-top: 30px;
     padding: 10px 20px;
     position: relative;
@@ -395,8 +408,8 @@ body {
     background-color: black;
     border-radius: 4px;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 10px;
+    left: 10px;
     z-index: -1;
     opacity: 0.8;
   }

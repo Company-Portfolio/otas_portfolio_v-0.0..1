@@ -5,12 +5,17 @@ import AboutUsPage from "./pages/AboutUsPage";
 import WebServicePage from "./pages/WebServicePage";
 import AppServicePage from "./pages/AppServicePage";
 import FreeConsulatingPage from "./pages/FreeConsulatingPage";
+import { useEffect, useState } from "react";
 
 function App() {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <>
       <Router>
-        <Navbar />
+        <Navbar scrollToTop={scrollToTop} />
         <Routes>
           <Route index element={<HomePage />} />
           <Route path="/about" element={<AboutUsPage />} />

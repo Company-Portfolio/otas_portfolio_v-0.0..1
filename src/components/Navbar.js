@@ -13,13 +13,14 @@ import Typography from "@mui/material/Typography";
 
 import { NavLink } from "react-router-dom";
 import logo from "./../assets/img/logoWhite.png";
+import { motion } from "framer-motion";
 
 import "./../style/navbar.css";
 
 const drawerWidth = 240;
 
 function DrawerAppBar(props) {
-  const { window } = props;
+  const { window, scrollToTop } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -61,7 +62,13 @@ function DrawerAppBar(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box
+      sx={{ display: "flex" }}
+      component={motion.div}
+      initial={{ y: -250 }}
+      animate={{ y: 0 }}
+      transition={{ type: "tween" }}
+    >
       {/* <CssBaseline /> */}
       <AppBar
         component="nav"
@@ -85,10 +92,10 @@ function DrawerAppBar(props) {
             <img src={logo} alt="logo" className="logo" />
           </Box>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            <NavLink to="/" className="nav">
+            <NavLink to="/" className="nav" onClick={scrollToTop}>
               Home
             </NavLink>
-            <NavLink to="/about" className="nav">
+            <NavLink to="/about" className="nav" onClick={scrollToTop}>
               About
             </NavLink>
           </Box>
@@ -109,17 +116,29 @@ function DrawerAppBar(props) {
               onClose={handleClose}
             >
               <MenuItem onClick={handleClose}>
-                <NavLink to="/service/web" className="navs">
+                <NavLink
+                  to="/service/web"
+                  className="navs"
+                  onClick={scrollToTop}
+                >
                   Web Development
                 </NavLink>
               </MenuItem>
               <MenuItem onClick={handleClose}>
-                <NavLink to="/service/app" className="navs">
+                <NavLink
+                  to="/service/app"
+                  className="navs"
+                  onClick={scrollToTop}
+                >
                   App Development
                 </NavLink>
               </MenuItem>
               <MenuItem onClick={handleClose}>
-                <NavLink to="/service/free" className="navs">
+                <NavLink
+                  to="/service/free"
+                  className="navs"
+                  onClick={scrollToTop}
+                >
                   Free Consulting
                 </NavLink>
               </MenuItem>
