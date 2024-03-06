@@ -1,0 +1,40 @@
+/* Poppin */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+.whocontainer {
+  width: 100%;
+  background: #222222;
+  padding: 35px 100px;
+}
+
+.whoheader {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.whocontent {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  font-family: "Quattrocento", serif;
+  font-size: 24px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.mission {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  color: #0077ff;
+  font-size: 32px;
+  margin-left: 32px;
+}
+
+.missionPhoto {
+  width: inherit;
+  height: inherit;
+}/*# sourceMappingURL=whoarewe.css.map */

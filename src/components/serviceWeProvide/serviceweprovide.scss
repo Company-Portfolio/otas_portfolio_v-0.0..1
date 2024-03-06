@@ -1,0 +1,44 @@
+@import "./../../variable/variable.scss";
+
+.serviceContainer {
+  background-color: $BackgroudColor;
+  // height: 100vh;
+  padding: 30px 100px;
+}
+
+.serviceHeader {
+  @include FontStyle;
+  font-size: 64px;
+}
+
+.serviceContent {
+  @include FontStyle;
+  font-size: 24px;
+}
+
+.serviceBox {
+  background-color: #fff;
+  padding: 36px;
+  border-radius: 10px;
+  margin-top: 50px;
+
+  span {
+    @include FontStyle;
+    @include LightStyle;
+    font-size: 32px;
+    font-weight: 500px;
+  }
+
+  p {
+    font-family: $QuattrocentoFont;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+  }
+
+  .serviceImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

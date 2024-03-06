@@ -1,0 +1,65 @@
+/* Poppin */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+.devContainer {
+  background-color: #222222;
+  padding: 30px 100px;
+}
+.devContainer p {
+  font-family: "Quattrocento", serif;
+  color: #fff;
+  font-size: 24px;
+}
+
+.devHeader {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.devImage h3 {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  color: #0077ff;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.devImage p {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: 0;
+}
+.devImage p img {
+  margin-right: 15px;
+}
+
+.devContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.stick {
+  width: 100px;
+  height: 2px;
+  background-color: #fff;
+}/*# sourceMappingURL=devProcess.css.map */

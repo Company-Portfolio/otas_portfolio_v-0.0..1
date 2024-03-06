@@ -1,0 +1,24 @@
+/* Poppin */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+
+// Font
+$OswaldFont: "Oswald", sans-serif;
+$QuattrocentoFont: "Quattrocento", serif;
+$BackgroudColor: #222222;
+$DarkBlue: #0077ff;
+$LightBlue: #007fff;
+
+@mixin DarkStyle {
+  color: $DarkBlue;
+}
+
+@mixin LightStyle {
+  background-color: $LightBlue;
+  padding: 0 10px;
+}
+
+@mixin FontStyle {
+  font-family: $OswaldFont;
+  color: #fff;
+}
