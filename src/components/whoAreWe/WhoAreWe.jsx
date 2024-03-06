@@ -8,7 +8,7 @@ import "./whoarewe.css";
 
 function WhoAreWe() {
   return (
-    <Box className="whocontainer">
+    <Box className="whocontainer" id="Aboutus">
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
           <Box>
@@ -36,7 +36,7 @@ function WhoAreWe() {
         </Grid>
         <Grid item xs={12} md={6} sx={{ marginTop: "50px" }}>
           <h3 className="title">
-            <img src={mission} />
+            <img src={mission} alt="mission" />
             <span className="mission">Our Mission</span>
           </h3>
           <p className="whocontent">
@@ -45,14 +45,14 @@ function WhoAreWe() {
             technologies to propel our clients towards success and
             transformation.
           </p>
-          <Box>
+          <Box className="missionPhotoContainer">
             <div className="missionPhoto"></div>
-            <img src={missionPhoto} />
+            <img src={missionPhoto} alt="missionPhoto" />
           </Box>
         </Grid>
         <Grid item xs={12} md={6} sx={{ marginTop: "50px" }}>
           <h3 className="title">
-            <img src={vision} />
+            <img src={vision} alt="vision" />
             <span className="mission">Our Vision</span>
           </h3>
           <p className="whocontent">

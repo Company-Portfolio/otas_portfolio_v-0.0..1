@@ -9,13 +9,13 @@ import "./devProcess.css";
 
 function DevProcess() {
   return (
-    <Box className="devContainer">
+    <Box className="devContainer" id="Development Process">
       <h1 className="devHeader">Our Development Process</h1>
       <p>
         Our product development process ensures precision and quality, leading
         to a seamless transfer of superior products for your business.
       </p>
-      <Box sx={{ padding: "50px 135px" }}>
+      <Box sx={{ padding: { xs: "30px", lg: "50px 135px" } }}>
         <Grid container>
           <Grid item xs={12} md={2} className="devImage">
             <h3>Process 1</h3>
@@ -24,10 +24,10 @@ function DevProcess() {
             </p>
           </Grid>
           <Grid item xs={12} md={10} className="devContent">
-            <div className="line">
+            <Box className="line" sx={{ display: { xs: "none", md: "flex" } }}>
               <div className="circle"></div>
               <div className="stick"></div>
-            </div>
+            </Box>
 
             <p>
               We delve deep into understanding your needs, market trends, and
@@ -38,17 +38,17 @@ function DevProcess() {
         </Grid>
 
         <Grid container>
-          <Grid item xs={12} md={2} className="devImage">
+          <Grid item xs={12} md={3} lg={2} className="devImage">
             <h3>Process 2</h3>
             <p>
               <img src={dev4} alt="web" /> Design
             </p>
           </Grid>
-          <Grid item xs={12} md={10} className="devContent">
-            <div className="line">
+          <Grid item xs={12} md={9} lg={10} className="devContent">
+            <Box className="line" sx={{ display: { xs: "none", md: "flex" } }}>
               <div className="circle"></div>
               <div className="stick"></div>
-            </div>
+            </Box>
 
             <p>
               We meticulously craft intuitive and innovative designs that align
@@ -59,18 +59,18 @@ function DevProcess() {
         </Grid>
 
         <Grid container>
-          <Grid item xs={12} md={2} className="devImage">
+          <Grid item xs={12} md={3} lg={2} className="devImage">
             <h3>Process 3</h3>
             <p>
               <img src={dev3} alt="develop" />
               Develop
             </p>
           </Grid>
-          <Grid item xs={12} md={10} className="devContent">
-            <div className="line">
+          <Grid item xs={12} md={9} lg={10} className="devContent">
+            <Box className="line" sx={{ display: { xs: "none", md: "flex" } }}>
               <div className="circle"></div>
               <div className="stick"></div>
-            </div>
+            </Box>
 
             <p>
               Our dedicated team members cutting-edge technologies and precise
@@ -81,17 +81,17 @@ function DevProcess() {
         </Grid>
 
         <Grid container>
-          <Grid item xs={12} md={2} className="devImage">
+          <Grid item xs={12} md={3} lg={2} className="devImage">
             <h3>Process 4</h3>
             <p>
               <img src={dev2} alt="test" /> Testing
             </p>
           </Grid>
-          <Grid item xs={12} md={10} className="devContent">
-            <div className="line">
+          <Grid item xs={12} md={9} lg={10} className="devContent">
+            <Box className="line" sx={{ display: { xs: "none", md: "flex" } }}>
               <div className="circle"></div>
               <div className="stick"></div>
-            </div>
+            </Box>
 
             <p>
               We employ meticulous evaluations to guarantee flawless
@@ -102,17 +102,17 @@ function DevProcess() {
         </Grid>
 
         <Grid container>
-          <Grid item xs={12} md={2} className="devImage">
+          <Grid item xs={12} md={3} lg={2} className="devImage">
             <h3>Process 5</h3>
             <p>
               <img src={dev1} alt="deliver" /> Deliver
             </p>
           </Grid>
-          <Grid item xs={12} md={10} className="devContent">
-            <div className="line">
+          <Grid item xs={12} md={9} lg={10} className="devContent">
+            <Box className="line" sx={{ display: { xs: "none", md: "flex" } }}>
               <div className="circle"></div>
               <div className="stick"></div>
-            </div>
+            </Box>
 
             <p>
               With precision and care, we ensure the smooth transition of the

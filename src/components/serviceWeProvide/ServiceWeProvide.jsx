@@ -8,7 +8,7 @@ import "./serviceweprovide.css";
 
 function ServiceWeProvide() {
   return (
-    <Box className="serviceContainer">
+    <Box className="serviceContainer" id="Services">
       <h1 className="serviceHeader">Services We Provide</h1>
       <p className="serviceContent">
         Our expertise lies in developing robust platforms tailored to your
@@ -18,7 +18,6 @@ function ServiceWeProvide() {
         client-focused approach, our seasoned team ensures each product aligns
         perfectly with your goals.
       </p>
-
       <Box className="serviceBox">
         <Grid container>
           <Grid item xs={12} md={8}>
@@ -37,7 +36,6 @@ function ServiceWeProvide() {
           </Grid>
         </Grid>
       </Box>
-
       <Box className="serviceBox">
         <Grid container>
           <Grid item xs={12} md={8}>
@@ -57,7 +55,6 @@ function ServiceWeProvide() {
           </Grid>
         </Grid>
       </Box>
-
       <Box className="serviceBox">
         <Grid container>
           <Grid item xs={12} md={8}>

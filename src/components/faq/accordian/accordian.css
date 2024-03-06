@@ -1,0 +1,28 @@
+/* Poppin */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+.accordianHeader {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  padding: 0 100px;
+}
+
+.accordiantext {
+  font-family: "Quattrocento", serif;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0 100px;
+}
+
+@media screen and (max-width: 500px) {
+  .accordianHeader {
+    font-size: 24px;
+    padding: 0 10px;
+  }
+  .accordianText {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+}/*# sourceMappingURL=accordian.css.map */

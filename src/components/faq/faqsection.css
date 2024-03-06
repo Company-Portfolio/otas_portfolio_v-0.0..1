@@ -1,0 +1,33 @@
+/* Poppin */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+.faqContainer {
+  background-color: #222222;
+  padding: 80px 100px 80px 100px;
+}
+
+.faqHeader {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  font-weight: 600;
+  font-size: 64px;
+}
+
+.faqText {
+  font-family: "Quattrocento", serif;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 500px) {
+  .faqContainer {
+    padding: 15px 10px;
+  }
+  .faqHeader {
+    font-size: 32px;
+  }
+  .faqText {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=faqsection.css.map */

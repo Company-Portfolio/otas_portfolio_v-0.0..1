@@ -1,0 +1,33 @@
+@import "./../../variable/variable.scss";
+
+.faqContainer {
+  background-color: $BackgroudColor;
+  padding: 80px 100px 80px 100px;
+}
+
+.faqHeader {
+  @include FontStyle;
+  font-weight: 600;
+  font-size: 64px;
+}
+
+.faqText {
+  font-family: $QuattrocentoFont;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 500px) {
+  .faqContainer {
+    padding: 15px 10px;
+  }
+
+  .faqHeader {
+    font-size: 32px;
+  }
+
+  .faqText {
+    font-size: 18px;
+  }
+}

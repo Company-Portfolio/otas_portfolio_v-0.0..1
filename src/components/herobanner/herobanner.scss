@@ -52,3 +52,12 @@
     padding: 6px 24px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .bannerText {
+    padding-left: 10px;
+    h1 {
+      font-size: 32px;
+    }
+  }
+}

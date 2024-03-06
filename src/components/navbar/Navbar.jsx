@@ -7,25 +7,15 @@ import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import logo from "./../../assets/logo.png";
 
 import "./../navbar/navbar.css";
+import { Link } from "react-scroll";
 
 const drawerWidth = 240;
-const navItems = [
-  "Aboutus",
-  "Services",
-  "Development Process",
-  "FAQ",
-  "Contact",
-];
 
 function Navbar(props) {
   const { window } = props;
@@ -36,19 +26,76 @@ function Navbar(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+    <Box
+      onClick={handleDrawerToggle}
+      sx={{ textAlign: "left", paddingLeft: "20px" }}
+    >
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+        OTAS Tech Solutions
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+        <Link
+          // activeClass="active"
+          to="Aboutus"
+          spy={false}
+          smooth={true}
+          offset={0}
+          duration={1000}
+          className="nav-links"
+          onClick={handleDrawerToggle}
+        >
+          Aboutus
+        </Link>
+
+        <Link
+          // activeClass="active"
+          to="Services"
+          spy={false}
+          smooth={true}
+          offset={0}
+          duration={1000}
+          className="nav-links"
+          onClick={handleDrawerToggle}
+        >
+          Services
+        </Link>
+
+        <Link
+          to="Development Process"
+          spy={false}
+          smooth={true}
+          offset={50}
+          duration={1000}
+          className="nav-links"
+          onClick={handleDrawerToggle}
+        >
+          Development Process
+        </Link>
+
+        <Link
+          to="FAQ"
+          spy={false}
+          smooth={true}
+          offset={50}
+          duration={1000}
+          className="nav-links"
+          onClick={handleDrawerToggle}
+        >
+          FAQ
+        </Link>
+
+        <Link
+          to="Contact"
+          spy={false}
+          smooth={true}
+          offset={0}
+          duration={1000}
+          className="nav-links"
+          onClick={handleDrawerToggle}
+        >
+          Contact
+        </Link>
       </List>
     </Box>
   );
@@ -69,25 +116,87 @@ function Navbar(props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
+            sx={{ mr: 2, display: { md: "none" } }}
           >
             <MenuIcon />
           </IconButton>
           <Box
             sx={{
               flexGrow: 1,
+              textAlign: { xs: "right", md: "left" },
             }}
           >
-            <img
-              src={logo}
-              alt="logo"
-              style={{ width: "70px", height: "70px", marginTop: "10px" }}
-            />
+            <Link
+              to="heroBanner"
+              spy={false}
+              smooth={true}
+              offset={0}
+              duration={1000}
+            >
+              <img
+                src={logo}
+                alt="logo"
+                style={{ width: "70px", height: "70px", marginTop: "10px" }}
+              />
+            </Link>
           </Box>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item) => (
-              <span className="nav-link">{item}</span>
-            ))}
+            <Link
+              // activeClass="active"
+              to="Aboutus"
+              spy={false}
+              smooth={true}
+              offset={0}
+              duration={1000}
+              className="nav-link"
+            >
+              Aboutus
+            </Link>
+
+            <Link
+              // activeClass="active"
+              to="Services"
+              spy={false}
+              smooth={true}
+              offset={0}
+              duration={1000}
+              className="nav-link"
+            >
+              Services
+            </Link>
+
+            <Link
+              to="Development Process"
+              spy={false}
+              smooth={true}
+              offset={50}
+              duration={1000}
+              className="nav-link"
+            >
+              Development Process
+            </Link>
+
+            <Link
+              to="FAQ"
+              spy={false}
+              smooth={true}
+              offset={50}
+              duration={1000}
+              className="nav-link"
+            >
+              FAQ
+            </Link>
+
+            <Link
+              to="Contact"
+              spy={false}
+              smooth={true}
+              offset={0}
+              duration={1000}
+              className="nav-link"
+            >
+              Contact
+            </Link>
           </Box>
         </Toolbar>
       </AppBar>

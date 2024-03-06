@@ -5,7 +5,7 @@ import "./herobanner.css";
 
 function HeroBanner() {
   return (
-    <Box className="bannerContainer">
+    <Box className="bannerContainer" id="heroBanner">
       <Box className="backgroundImage"></Box>
       <Box className="bannerText">
         <h1>

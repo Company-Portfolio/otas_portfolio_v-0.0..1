@@ -4,7 +4,7 @@
 .whocontainer {
   width: 100%;
   background: #222222;
-  padding: 35px 100px;
+  padding: 80px 100px 80px 100px;
 }
 
 .whoheader {
@@ -37,4 +37,24 @@
 .missionPhoto {
   width: inherit;
   height: inherit;
+}
+
+@media screen and (max-width: 500px) {
+  .whocontainer {
+    padding: 10px;
+  }
+  .whoheader {
+    font-size: 32px;
+  }
+  .whocontent {
+    font-size: 18px;
+  }
+  .missionPhotoContainer {
+    width: 100%;
+    height: inherit;
+  }
+  .missionPhotoContainer img {
+    width: inherit;
+    height: inherit;
+  }
 }/*# sourceMappingURL=whoarewe.css.map */

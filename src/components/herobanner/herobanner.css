@@ -47,4 +47,13 @@
   color: #000;
   background-color: #0077ff;
   padding: 6px 24px;
+}
+
+@media screen and (max-width: 500px) {
+  .bannerText {
+    padding-left: 10px;
+  }
+  .bannerText h1 {
+    font-size: 32px;
+  }
 }/*# sourceMappingURL=herobanner.css.map */

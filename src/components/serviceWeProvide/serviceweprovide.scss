@@ -2,8 +2,9 @@
 
 .serviceContainer {
   background-color: $BackgroudColor;
+  // background-color: red;
   // height: 100vh;
-  padding: 30px 100px;
+  padding: 50px 100px 0px 100px;
 }
 
 .serviceHeader {
@@ -40,5 +41,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .serviceContainer {
+    padding: 50px 10px;
+  }
+
+  .serviceHeader {
+    font-size: 32px;
+  }
+
+  .serviceContent {
+    font-size: 18px;
+  }
+
+  .serviceBox {
+    span {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 16px;
+    }
   }
 }

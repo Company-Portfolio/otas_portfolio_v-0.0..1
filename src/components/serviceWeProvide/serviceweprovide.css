@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
 .serviceContainer {
   background-color: #222222;
-  padding: 30px 100px;
+  padding: 50px 100px 0px 100px;
 }
 
 .serviceHeader {
@@ -42,4 +42,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .serviceContainer {
+    padding: 50px 10px;
+  }
+  .serviceHeader {
+    font-size: 32px;
+  }
+  .serviceContent {
+    font-size: 18px;
+  }
+  .serviceBox span {
+    font-size: 24px;
+  }
+  .serviceBox p {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=serviceweprovide.css.map */
