@@ -33,12 +33,38 @@
   margin-left: 32px;
 }
 
+.missionPhotoContainer {
+  position: relative;
+  height: 200px;
+  // background-color: red;
+
+  z-index: 1;
+}
+
+.missionbackground {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  z-index: -1;
+}
+
 .missionPhoto {
+  // width: 100%;
+  // height: inherit;
+
+  position: absolute;
+
+  z-index: 5;
+  right: 0px;
+}
+
+.missionPhoto img {
   width: inherit;
   height: inherit;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .whocontainer {
     padding: 10px;
   }
@@ -53,11 +79,14 @@
 
   .missionPhotoContainer {
     width: 100%;
-    height: inherit;
+    height: 200px;
+    position: static;
   }
 
   .missionPhotoContainer img {
     width: inherit;
     height: inherit;
+
+    position: static;
   }
 }

@@ -1,5 +1,6 @@
 import { Box, Grid } from "@mui/material";
 import React from "react";
+import poly2 from "./../../assets/image/Polygon2.png";
 import mission from "./../../assets/image/mission.png";
 import missionPhoto from "./../../assets/image/missionPhoto.png";
 import vision from "./../../assets/image/vission.png";
@@ -46,8 +47,14 @@ function WhoAreWe() {
             transformation.
           </p>
           <Box className="missionPhotoContainer">
-            <div className="missionPhoto"></div>
-            <img src={missionPhoto} alt="missionPhoto" />
+            <div className="missionbackground">
+              <img src={poly2} alt="two" />
+            </div>
+            <img
+              src={missionPhoto}
+              alt="missionPhoto"
+              className="missionPhoto"
+            />
           </Box>
         </Grid>
         <Grid item xs={12} md={6} sx={{ marginTop: "50px" }}>
