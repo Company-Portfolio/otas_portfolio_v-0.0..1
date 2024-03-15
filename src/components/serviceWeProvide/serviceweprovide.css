@@ -44,7 +44,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .serviceContainer {
     padding: 50px 10px;
   }
