@@ -96,7 +96,18 @@
   z-index: 1;
 }
 
+.lines {
+  background-color: red;
+  align-items: center;
+
+  z-index: 1;
+
+  // transform: rotate(90deg);
+}
+
 .line {
+  // width: 300px;
+  // height: 500px;
   justify-content: center;
   align-items: center;
   padding: 0 50px;
@@ -109,6 +120,14 @@
   height: 10px;
   background-color: #fff;
   border-radius: 50%;
+
+  z-index: 1;
+}
+
+.sticks {
+  width: 500px;
+  height: 2px;
+  background-color: #fff;
 
   z-index: 1;
 }

@@ -17,13 +17,13 @@ function DevProcess() {
       </p>
       <Box sx={{ padding: { xs: "30px", lg: "50px 135px" } }}>
         <Grid container>
-          <Grid item xs={12} md={2} className="devImage">
+          <Grid item xs={12} md={3} lg={2} className="devImage">
             <h3>Process 1</h3>
             <p>
               <img src={dev5} alt="web" /> Research
             </p>
           </Grid>
-          <Grid item xs={12} md={10} className="devContent">
+          <Grid item xs={12} md={9} lg={10} className="devContent">
             <Box className="line" sx={{ display: { xs: "none", md: "flex" } }}>
               <div className="circle"></div>
               <div className="stick"></div>

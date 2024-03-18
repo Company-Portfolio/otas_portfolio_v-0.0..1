@@ -1,5 +1,6 @@
 import { Box, Grid } from "@mui/material";
 import React from "react";
+import whoarewe from "./../../assets/image/whoarewe.png";
 import poly2 from "./../../assets/image/Polygon2.png";
 import mission from "./../../assets/image/mission.png";
 import missionPhoto from "./../../assets/image/missionPhoto.png";
@@ -10,19 +11,18 @@ import "./whoarewe.css";
 function WhoAreWe() {
   return (
     <Box className="whocontainer" id="Aboutus">
+      <h1 className="whoheader">Who are we?</h1>
       <Grid container spacing={2}>
-        <Grid item xs={12} md={6}>
-          <Box>
-            <h1 className="whoheader">Who are we?</h1>
-            <p className="whocontent">
-              Transforming businesses through be spoke digital solutions is our
-              expertise at OTAS Tech Solution. Whether you need powerful
-              websites, or tailored software, innovative apps, we craft
-              solutions to amplify your success.
-            </p>
+        <Grid
+          item
+          xs={12}
+          md={8}
+          sx={{ marginLeft: "auto", marginRight: "auto" }}
+        >
+          <Box className="whoimage" sx={{ width: "100%", overflow: "hidden" }}>
+            <img src={whoarewe} alt="whoarewe" style={{ width: "inherit" }} />
           </Box>
         </Grid>
-        <Grid item></Grid>
         <Grid item>
           <p className="whocontent">
             OTAS Co.,Ltd. was established in 2021. We started as a group of
@@ -47,9 +47,12 @@ function WhoAreWe() {
             transformation.
           </p>
           <Box className="missionPhotoContainer">
-            <div className="missionbackground">
+            <Box
+              className="missionbackground"
+              sx={{ display: { xs: "none", md: "block" } }}
+            >
               <img src={poly2} alt="two" />
-            </div>
+            </Box>
             <img
               src={missionPhoto}
               alt="missionPhoto"
