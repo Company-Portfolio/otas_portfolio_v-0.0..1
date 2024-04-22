@@ -19,14 +19,14 @@ function AboutAccordian() {
             sx={{ backgroundColor: "#007fff" }}
           >
             <span className="accordianHeader">
-              Is the free consultation really free?
+              What does OTAS Tech Solution specialize in
             </span>
           </AccordionSummary>
           <AccordionDetails>
             <p className="accordiantext">
               OTAS Tech Solution is a comprehensive technology solutions
-              provider, offering services such as software development, app
-              development and IT consulting.
+              provider, offering services such as Web development,Software
+              development,App development and IT consulting.
             </p>
           </AccordionDetails>
         </Accordion>
@@ -39,14 +39,15 @@ function AboutAccordian() {
             sx={{ backgroundColor: "#007fff" }}
           >
             <span className="accordianHeader">
-              How Can OTAS Tech Solution help my business?
+              How can OTAS Tech Solution help your business
             </span>
           </AccordionSummary>
           <AccordionDetails>
             <p className="accordiantext">
-              OTAS Tech Solution is a comprehensive technology solutions
-              provider, offering services such as software development, app
-              development and IT consulting.
+              We tailor our tech solution to meet your business needs, enhancing
+              efficiency, productivity, and security. Whether you need custom
+              software, IT infrastructure support, or strategic consulting,
+              we’ve got you covered.
             </p>
           </AccordionDetails>
         </Accordion>
@@ -59,55 +60,15 @@ function AboutAccordian() {
             sx={{ backgroundColor: "#007fff" }}
           >
             <span className="accordianHeader">
-              What Industries Does OTAS Tech Solution Serve?
+              Is OTAS Tech Solution open to partnerships or collaborations?
             </span>
           </AccordionSummary>
           <AccordionDetails>
             <p className="accordiantext">
-              OTAS Tech Solution is a comprehensive technology solutions
-              provider, offering services such as software development, app
-              development and IT consulting.
-            </p>
-          </AccordionDetails>
-        </Accordion>
-      </Grid>
-
-      <Grid item xs={12} md={8} sx={{ marginY: "20px" }}>
-        <Accordion sx={{ borderRadius: "15px", overflow: "hidden" }}>
-          <AccordionSummary
-            expandIcon={<ArrowDropDownIcon sx={{ color: "#fff" }} />}
-            sx={{ backgroundColor: "#007fff" }}
-          >
-            <span className="accordianHeader">
-              Is OTAS Tech Solution Open To Partnerships Or Collaborations?
-            </span>
-          </AccordionSummary>
-          <AccordionDetails>
-            <p className="accordiantext">
-              OTAS Tech Solution is a comprehensive technology solutions
-              provider, offering services such as software development, app
-              development and IT consulting.
-            </p>
-          </AccordionDetails>
-        </Accordion>
-      </Grid>
-
-      <Grid item xs={12} md={8} sx={{ marginY: "20px" }}>
-        <Accordion sx={{ borderRadius: "15px", overflow: "hidden" }}>
-          <AccordionSummary
-            expandIcon={<ArrowDropDownIcon sx={{ color: "#fff" }} />}
-            sx={{ backgroundColor: "#007fff" }}
-          >
-            <span className="accordianHeader">
-              How Can I Get In Touch With OTAS Tech Solution For More
-              Information?
-            </span>
-          </AccordionSummary>
-          <AccordionDetails>
-            <p className="accordiantext">
-              OTAS Tech Solution is a comprehensive technology solutions
-              provider, offering services such as software development, app
-              development and IT consulting.
+              Yes, we value partnerships and collaborations. Whether you’re a
+              fellow tech company, a startup, or an established business looking
+              for innovative solutions, we’re open to exploring collaborative
+              opportunities.
             </p>
           </AccordionDetails>
         </Accordion>

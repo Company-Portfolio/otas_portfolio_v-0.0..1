@@ -17,7 +17,9 @@ function HeroBanner() {
           product aligns perfectly with your goals. Let’s collaborate <br /> and
           elevate your business into the digital forefront.
         </p>
-        <a href="#">Contact Us</a>
+        <a href="https://www.facebook.com/messages/t/121899224338902">
+          Contact Us
+        </a>
       </Box>
     </Box>
   );
