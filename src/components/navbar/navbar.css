@@ -1,28 +1,32 @@
 /* Poppin */
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .nav-link {
-  font-family: "Oswald", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   text-decoration: none;
   margin: 0 10px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .nav-link.active {
   padding-bottom: 12px;
   border-bottom: 3px solid #0077ff;
+  transition: 0.3s;
 }
 
 .nav-link:hover {
   padding-bottom: 12px;
   border-bottom: 3px solid #0077ff;
+  transition: 0.3s;
 }
 
 .nav-links {
-  font-family: "Oswald", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #000;
   text-decoration: none;
   margin: 0 10px;
@@ -31,4 +35,5 @@
   cursor: pointer;
   display: block;
   margin: 20px 0;
+  transition: 0.3s;
 }/*# sourceMappingURL=navbar.css.map */

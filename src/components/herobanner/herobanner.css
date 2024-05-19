@@ -1,6 +1,7 @@
 /* Poppin */
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .bannerContainer {
   width: 100vw;
   height: 100vh;
@@ -24,13 +25,15 @@
   padding-left: 100px;
 }
 .bannerText h1 {
-  font-family: "Oswald", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   color: #fff;
   font-size: 64px;
 }
 .bannerText .bannerDescription {
   font-size: 24px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   color: #fff;
 }
 .bannerText .darkblue {
@@ -42,11 +45,20 @@
 }
 .bannerText a {
   text-decoration: none;
-  font-family: "Oswald", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   color: #fff;
-  color: #000;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
   background-color: #0077ff;
-  padding: 6px 24px;
+  padding: 10px 24px;
+  transition: 0.5s;
+}
+.bannerText a:hover {
+  color: #007fff;
+  background-color: #fff;
+  transition: 0.5s;
 }
 
 @media screen and (max-width: 600px) {

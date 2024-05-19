@@ -1,6 +1,7 @@
 /* Poppin */
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .devContainer {
   background-color: #222222;
   padding: 80px 100px 0 100px;
@@ -8,7 +9,7 @@
   z-index: 0;
 }
 .devContainer p {
-  font-family: "Quattrocento", serif;
+  font-family: "Montserrat", serif;
   color: #fff;
   font-size: 24px;
   z-index: 1;
@@ -39,7 +40,8 @@
 }
 
 .devHeader {
-  font-family: "Oswald", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   color: #fff;
   font-size: 64px;
   font-weight: 600;
@@ -50,14 +52,16 @@
   z-index: 1;
 }
 .devImage h3 {
-  font-family: "Oswald", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   color: #fff;
   color: #0077ff;
-  font-size: 32px;
+  font-size: 28px;
   margin-bottom: 10px;
 }
 .devImage p {
-  font-family: "Oswald", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   color: #fff;
   display: flex;
   align-items: center;

@@ -111,9 +111,8 @@ function ServiceWeProvide() {
           <Grid item xs={12} md={8}>
             <span>Game Development</span>
             <p>
-              Our free consultations delve deep into your business goals,
-              providing customized strategies and actionable advice to help you
-              navigate challenges and seize opportunities
+              Bring your vision to life with unique and immersive gaming
+              experiences crafted by our expert team from concept to release.
             </p>
           </Grid>
           <Grid item xs={12} md={4} className="serviceImage">
@@ -138,9 +137,9 @@ function ServiceWeProvide() {
           <Grid item xs={12} md={8}>
             <span>IoT (Internet of Things) Development</span>
             <p>
-              Our free consultations delve deep into your business goals,
-              providing customized strategies and actionable advice to help you
-              navigate challenges and seize opportunities
+              We design and develop tailored IoT solutions that meet your
+              specific business needs. Our expertise spans various industries,
+              ensuring that your IoT system is both effective and efficient.
             </p>
           </Grid>
           <Grid item xs={12} md={4} className="serviceImage">
@@ -165,9 +164,10 @@ function ServiceWeProvide() {
           <Grid item xs={12} md={8}>
             <span>UI/UX Design Development</span>
             <p>
-              Our free consultations delve deep into your business goals,
-              providing customized strategies and actionable advice to help you
-              navigate challenges and seize opportunities
+              Create visually appealing and user-friendly interfaces with our
+              comprehensive UI/UX design services. We focus on delivering
+              intuitive and engaging experiences that meet user needs and
+              business goals.
             </p>
           </Grid>
           <Grid item xs={12} md={4} className="serviceImage">
@@ -192,9 +192,11 @@ function ServiceWeProvide() {
           <Grid item xs={12} md={8}>
             <span>Outsourced Development Team</span>
             <p>
-              Our free consultations delve deep into your business goals,
-              providing customized strategies and actionable advice to help you
-              navigate challenges and seize opportunities
+              Our outsourcing project services provide the expertise and
+              resources you need to focus on your core business activities while
+              ensuring high-quality results across various functions. Partner
+              with us to achieve efficiency, cost savings, and scalability for
+              your business operations.
             </p>
           </Grid>
           <Grid item xs={12} md={4} className="serviceImage">

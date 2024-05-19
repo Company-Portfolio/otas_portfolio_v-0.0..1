@@ -2,26 +2,26 @@
 
 .accordianHeader {
   @include FontStyle;
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 500;
   padding: 0 100px;
 }
 
 .accordiantext {
   font-family: $QuattrocentoFont;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
   padding: 0 100px;
 }
 
 @media screen and (max-width: 600px) {
   .accordianHeader {
-    font-size: 24px;
+    font-size: 18px;
     padding: 0 10px;
   }
 
   .accordiantext {
-    font-size: 18px;
-    padding: 0px;
+    font-size: 14px;
+    padding: 0 10px;
   }
 }

@@ -47,9 +47,18 @@
   a {
     text-decoration: none;
     @include FontStyle;
-    color: #000;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
     background-color: $DarkBlue;
-    padding: 6px 24px;
+    padding: 10px 24px;
+    transition: 0.5s;
+  }
+
+  a:hover {
+    color: $LightBlue;
+    background-color: #fff;
+    transition: 0.5s;
   }
 }
 

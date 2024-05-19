@@ -1,6 +1,7 @@
 /* Poppin */
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .whocontainer {
   width: 100%;
   background: #222222;
@@ -8,16 +9,18 @@
 }
 
 .whoheader {
-  font-family: "Oswald", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   color: #fff;
   font-size: 64px;
   font-weight: 600;
 }
 
 .whocontent {
-  font-family: "Oswald", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   color: #fff;
-  font-family: "Quattrocento", serif;
+  font-family: "Montserrat", serif;
   font-size: 24px;
 }
 
@@ -27,7 +30,8 @@
 }
 
 .mission {
-  font-family: "Oswald", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   color: #fff;
   color: #0077ff;
   font-size: 32px;

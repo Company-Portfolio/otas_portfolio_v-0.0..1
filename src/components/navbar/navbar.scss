@@ -6,19 +6,22 @@
   text-decoration: none;
   margin: 0 10px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   cursor: pointer;
+  transition: 0.3s;
   // opacity: 50%;
 }
 
 .nav-link.active {
   padding-bottom: 12px;
   border-bottom: 3px solid $DarkBlue;
+  transition: 0.3s;
 }
 
 .nav-link:hover {
   padding-bottom: 12px;
   border-bottom: 3px solid $DarkBlue;
+  transition: 0.3s;
 }
 
 .nav-links {
@@ -31,5 +34,6 @@
   cursor: pointer;
   display: block;
   margin: 20px 0;
+  transition: 0.3s;
   // background-color: red;
 }
