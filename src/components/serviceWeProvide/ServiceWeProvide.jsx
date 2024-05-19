@@ -1,9 +1,12 @@
-import { Box, Grid } from "@mui/material";
+import { Box, Button, Grid } from "@mui/material";
 import React from "react";
 import web from "./../../assets/image/web.png";
 import app from "./../../assets/image/app.png";
 import custom from "./../../assets/image/custom.png";
-
+import game from "./../../assets/image/game.png";
+import iot from "./../../assets/image/iot.png";
+import ui from "./../../assets/image/uiux.png";
+import out from "./../../assets/image/outsource.png";
 import "./serviceweprovide.css";
 
 function ServiceWeProvide() {
@@ -15,6 +18,7 @@ function ServiceWeProvide() {
         specific needs. Our services are designed to streamline your operations
         and fuel your business's digital growth.
       </p>
+
       <Box className="serviceBox">
         <Grid container>
           <Grid item xs={12} md={8}>
@@ -30,8 +34,20 @@ function ServiceWeProvide() {
           <Grid item xs={12} md={4} className="serviceImage">
             <img src={web} alt="web" />
           </Grid>
+          <Button
+            sx={{
+              width: { xs: "100%", md: "35%", lg: "25%" },
+              marginTop: "20px",
+            }}
+            className="explore"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSefs8N0MdmrffC2_4_VutnpVIh46dUXnXImlPnrfmA9RlTB3Q/viewform"
+            target="_blank"
+          >
+            Explore Now
+          </Button>
         </Grid>
       </Box>
+
       <Box className="serviceBox">
         <Grid container>
           <Grid item xs={12} md={8}>
@@ -49,8 +65,20 @@ function ServiceWeProvide() {
           <Grid item xs={12} md={4} className="serviceImage">
             <img src={app} alt="web" />
           </Grid>
+          <Button
+            sx={{
+              width: { xs: "100%", md: "35%", lg: "25%" },
+              marginTop: "20px",
+            }}
+            href="https://docs.google.com/forms/d/e/1FAIpQLSefs8N0MdmrffC2_4_VutnpVIh46dUXnXImlPnrfmA9RlTB3Q/viewform"
+            target="_blank"
+            className="explore"
+          >
+            Explore Now
+          </Button>
         </Grid>
       </Box>
+
       <Box className="serviceBox">
         <Grid container>
           <Grid item xs={12} md={8}>
@@ -64,6 +92,125 @@ function ServiceWeProvide() {
           <Grid item xs={12} md={4} className="serviceImage">
             <img src={custom} alt="web" />
           </Grid>
+          <Button
+            sx={{
+              width: { xs: "100%", md: "35%", lg: "25%" },
+              marginTop: "20px",
+            }}
+            href="https://docs.google.com/forms/d/e/1FAIpQLSefs8N0MdmrffC2_4_VutnpVIh46dUXnXImlPnrfmA9RlTB3Q/viewform"
+            target="_blank"
+            className="explore"
+          >
+            Explore Now
+          </Button>
+        </Grid>
+      </Box>
+
+      <Box className="serviceBox">
+        <Grid container>
+          <Grid item xs={12} md={8}>
+            <span>Game Development</span>
+            <p>
+              Our free consultations delve deep into your business goals,
+              providing customized strategies and actionable advice to help you
+              navigate challenges and seize opportunities
+            </p>
+          </Grid>
+          <Grid item xs={12} md={4} className="serviceImage">
+            <img src={game} alt="web" />
+          </Grid>
+          <Button
+            sx={{
+              width: { xs: "100%", md: "35%", lg: "25%" },
+              marginTop: "20px",
+            }}
+            href="https://docs.google.com/forms/d/e/1FAIpQLSefs8N0MdmrffC2_4_VutnpVIh46dUXnXImlPnrfmA9RlTB3Q/viewform"
+            target="_blank"
+            className="explore"
+          >
+            Explore Now
+          </Button>
+        </Grid>
+      </Box>
+
+      <Box className="serviceBox">
+        <Grid container>
+          <Grid item xs={12} md={8}>
+            <span>IoT (Internet of Things) Development</span>
+            <p>
+              Our free consultations delve deep into your business goals,
+              providing customized strategies and actionable advice to help you
+              navigate challenges and seize opportunities
+            </p>
+          </Grid>
+          <Grid item xs={12} md={4} className="serviceImage">
+            <img src={iot} alt="web" />
+          </Grid>
+          <Button
+            sx={{
+              width: { xs: "100%", md: "35%", lg: "25%" },
+              marginTop: "20px",
+            }}
+            href="https://docs.google.com/forms/d/e/1FAIpQLSefs8N0MdmrffC2_4_VutnpVIh46dUXnXImlPnrfmA9RlTB3Q/viewform"
+            target="_blank"
+            className="explore"
+          >
+            Explore Now
+          </Button>
+        </Grid>
+      </Box>
+
+      <Box className="serviceBox">
+        <Grid container>
+          <Grid item xs={12} md={8}>
+            <span>UI/UX Design Development</span>
+            <p>
+              Our free consultations delve deep into your business goals,
+              providing customized strategies and actionable advice to help you
+              navigate challenges and seize opportunities
+            </p>
+          </Grid>
+          <Grid item xs={12} md={4} className="serviceImage">
+            <img src={ui} alt="web" />
+          </Grid>
+          <Button
+            sx={{
+              width: { xs: "100%", md: "35%", lg: "25%" },
+              marginTop: "20px",
+            }}
+            href="https://docs.google.com/forms/d/e/1FAIpQLSefs8N0MdmrffC2_4_VutnpVIh46dUXnXImlPnrfmA9RlTB3Q/viewform"
+            target="_blank"
+            className="explore"
+          >
+            Explore Now
+          </Button>
+        </Grid>
+      </Box>
+
+      <Box className="serviceBox">
+        <Grid container>
+          <Grid item xs={12} md={8}>
+            <span>Outsourced Development Team</span>
+            <p>
+              Our free consultations delve deep into your business goals,
+              providing customized strategies and actionable advice to help you
+              navigate challenges and seize opportunities
+            </p>
+          </Grid>
+          <Grid item xs={12} md={4} className="serviceImage">
+            <img src={out} alt="web" />
+          </Grid>
+          <Button
+            sx={{
+              width: { xs: "100%", md: "35%", lg: "25%" },
+              marginTop: "20px",
+            }}
+            href="https://docs.google.com/forms/d/e/1FAIpQLSefs8N0MdmrffC2_4_VutnpVIh46dUXnXImlPnrfmA9RlTB3Q/viewform"
+            target="_blank"
+            className="explore"
+          >
+            Explore Now
+          </Button>
         </Grid>
       </Box>
     </Box>

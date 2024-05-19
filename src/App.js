@@ -6,6 +6,7 @@ import ServiceWeProvide from "./components/serviceWeProvide/ServiceWeProvide";
 import DevProcess from "./components/developmentProcess/DevProcess";
 import FaqSection from "./components/faq/FaqSection";
 import Footer from "./components/footer/Footer";
+import OurClient from "./components/ourclient/OurClient";
 
 function App() {
   // const scrollToTop = () => {
@@ -18,6 +19,7 @@ function App() {
       <WhoAreWe />
       <ServiceWeProvide />
       <DevProcess />
+      <OurClient />
       <FaqSection />
       <Footer />
     </Box>

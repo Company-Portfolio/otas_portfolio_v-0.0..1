@@ -20,21 +20,18 @@
 
 .serviceBox {
   background-color: #fff;
-  padding: 36px;
+  padding: 36px 100px;
   border-radius: 10px;
   margin-top: 50px;
 }
 .serviceBox span {
-  font-family: "Oswald", sans-serif;
-  color: #fff;
-  background-color: #007fff;
-  padding: 0 10px;
+  color: #007fff;
   font-size: 32px;
-  font-weight: 500px;
+  font-weight: bold;
 }
 .serviceBox p {
   font-family: "Quattrocento", serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   color: #000;
 }
@@ -42,6 +39,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.serviceBox .explore {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007fff;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.serviceBox .explore:hover {
+  background-color: #fff;
+  border: 1px solid #007fff;
+  color: #007fff;
+  transform: scale(1.02);
 }
 
 @media screen and (max-width: 600px) {
@@ -53,6 +65,9 @@
   }
   .serviceContent {
     font-size: 18px;
+  }
+  .serviceBox {
+    padding: 36px;
   }
   .serviceBox span {
     font-size: 24px;

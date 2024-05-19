@@ -19,20 +19,21 @@
 
 .serviceBox {
   background-color: #fff;
-  padding: 36px;
+  padding: 36px 100px;
   border-radius: 10px;
   margin-top: 50px;
 
   span {
-    @include FontStyle;
-    @include LightStyle;
+    // @include FontStyle;
+    // @include LightStyle;
+    color: $LightBlue;
     font-size: 32px;
-    font-weight: 500px;
+    font-weight: bold;
   }
 
   p {
     font-family: $QuattrocentoFont;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     color: #000;
   }
@@ -41,6 +42,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .explore {
+    padding: 10px 15px;
+    border: none;
+    background-color: $LightBlue;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+
+  .explore:hover {
+    background-color: #fff;
+    border: 1px solid $LightBlue;
+    color: $LightBlue;
+    transform: scale(1.02);
   }
 }
 
@@ -58,6 +76,7 @@
   }
 
   .serviceBox {
+    padding: 36px;
     span {
       font-size: 24px;
     }

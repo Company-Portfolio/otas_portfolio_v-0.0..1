@@ -1,6 +1,6 @@
 import { Box, Grid } from "@mui/material";
 import React from "react";
-import whoarewe from "./../../assets/image/whoarewe.png";
+import whoarewe from "./../../assets/image/otasmember.jpeg";
 import poly2 from "./../../assets/image/Polygon2.png";
 import mission from "./../../assets/image/mission.png";
 import missionPhoto from "./../../assets/image/missionPhoto.png";
@@ -11,12 +11,12 @@ import "./whoarewe.css";
 function WhoAreWe() {
   return (
     <Box className="whocontainer" id="Aboutus">
-      <h1 className="whoheader">Who are we?</h1>
+      <h1 className="whoheader">About Our Company</h1>
       <Grid container spacing={2}>
         <Grid
           item
           xs={12}
-          md={8}
+          md={12}
           sx={{ marginLeft: "auto", marginRight: "auto" }}
         >
           <Box className="whoimage" sx={{ width: "100%", overflow: "hidden" }}>
@@ -46,7 +46,7 @@ function WhoAreWe() {
             technologies to propel our clients towards success and
             transformation.
           </p>
-          <Box className="missionPhotoContainer">
+          {/* <Box className="missionPhotoContainer">
             <Box
               className="missionbackground"
               sx={{ display: { xs: "none", md: "block" } }}
@@ -58,7 +58,7 @@ function WhoAreWe() {
               alt="missionPhoto"
               className="missionPhoto"
             />
-          </Box>
+          </Box> */}
         </Grid>
         <Grid item xs={12} md={6} sx={{ marginTop: "50px" }}>
           <h3 className="title">
