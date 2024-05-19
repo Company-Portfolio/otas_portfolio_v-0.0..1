@@ -111,34 +111,34 @@ function Navbar(props) {
         sx={{ backgroundColor: "#222222", boxShadow: "none" }}
       >
         <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { md: "none" } }}
+          <Link
+            to="heroBanner"
+            spy={false}
+            smooth={true}
+            offset={0}
+            duration={1000}
           >
-            <MenuIcon />
-          </IconButton>
+            <img
+              src={logo}
+              alt="logo"
+              style={{ width: "70px", height: "70px", marginTop: "10px" }}
+            />
+          </Link>
           <Box
             sx={{
               flexGrow: 1,
               textAlign: { xs: "right", md: "left" },
             }}
           >
-            <Link
-              to="heroBanner"
-              spy={false}
-              smooth={true}
-              offset={0}
-              duration={1000}
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              edge="start"
+              onClick={handleDrawerToggle}
+              sx={{ mr: 2, display: { md: "none" } }}
             >
-              <img
-                src={logo}
-                alt="logo"
-                style={{ width: "70px", height: "70px", marginTop: "10px" }}
-              />
-            </Link>
+              <MenuIcon />
+            </IconButton>
           </Box>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             <Link
@@ -150,7 +150,7 @@ function Navbar(props) {
               duration={1000}
               className="nav-link"
             >
-              Aboutus
+              About Us
             </Link>
 
             <Link
@@ -174,6 +174,17 @@ function Navbar(props) {
               className="nav-link"
             >
               Development Process
+            </Link>
+
+            <Link
+              to="Client"
+              spy={false}
+              smooth={true}
+              offset={0}
+              duration={1000}
+              className="nav-link"
+            >
+              Our Client
             </Link>
 
             <Link
@@ -202,6 +213,9 @@ function Navbar(props) {
       </AppBar>
       <nav>
         <Drawer
+          anchor="right"
+          // role="presentation"
+          //  open={state[anchor]}
           container={container}
           variant="temporary"
           open={mobileOpen}

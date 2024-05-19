@@ -9,7 +9,7 @@
 
 .footerText h1 {
   @include FontStyle;
-  font-size: 58px;
+  // font-size: 58px;
   font-weight: 600px;
 }
 
@@ -25,9 +25,8 @@
   font-family: $OswaldFont;
   color: $LightBlue;
   text-decoration: none;
-  font-size: 48px;
+  // font-size: 48px;
   font-weight: bold;
-  margin-right: 100px;
 }
 
 .email {
@@ -38,6 +37,8 @@
 
 .contactInfo {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footerMap {

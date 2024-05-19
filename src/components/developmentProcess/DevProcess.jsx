@@ -20,7 +20,8 @@ function DevProcess() {
           <Grid item xs={12} md={3} lg={2} className="devImage">
             <h3>Process 1</h3>
             <p>
-              <img src={dev5} alt="web" /> Research
+              <img src={dev5} alt="web" />
+              Research
             </p>
           </Grid>
           <Grid item xs={12} md={9} lg={10} className="devContent">

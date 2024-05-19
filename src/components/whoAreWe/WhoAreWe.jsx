@@ -19,7 +19,10 @@ function WhoAreWe() {
           md={12}
           sx={{ marginLeft: "auto", marginRight: "auto" }}
         >
-          <Box className="whoimage" sx={{ width: "100%", overflow: "hidden" }}>
+          <Box
+            className="whoimage"
+            sx={{ width: "100%", overflow: "hidden", borderRadius: "10px" }}
+          >
             <img src={whoarewe} alt="whoarewe" style={{ width: "inherit" }} />
           </Box>
         </Grid>

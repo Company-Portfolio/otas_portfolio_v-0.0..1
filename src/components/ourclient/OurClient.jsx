@@ -3,19 +3,20 @@ import React from "react";
 import itfn from "./../../assets/image/internationalfocuslogo.jpg";
 import KKK from "./../../assets/image/KKK.png";
 import saw from "./../../assets/image/digitalsaw.png";
+import Tooltip from "@mui/material/Tooltip";
 
 function OurClient() {
   return (
     <div>
       <Box
         className="serviceContainer"
-        id="Services"
+        id="Client"
         sx={{ paddingBottom: "1px" }}
       >
         <h1 className="serviceHeader">Our Clients</h1>
         <p className="serviceContent">
-          Our product development process ensures precision and quality, leading
-          to a seamless transfer of superior products for your business.
+          We are proud to collaborate with a diverse range of clients, from
+          innovative startups to established.
         </p>
         <Box
           sx={{
@@ -27,44 +28,65 @@ function OurClient() {
             margin: "10px 0px",
           }}
         >
-          <Box
-            sx={{
-              width: { xs: "150px", md: "100px", lg: "150px" },
-              marginTop: "20px",
-            }}
+          <Tooltip
+            title="International Focus Oversea Employment Agency"
+            placement="right-start"
           >
-            <img
-              src={itfn}
-              style={{ width: "inherit", height: "inherit" }}
-              alt="clinet-logo"
-            />
-          </Box>
+            <Box
+              sx={{
+                width: { xs: "150px", md: "100px", lg: "150px" },
+                marginTop: "20px",
+                borderRadius: "10px",
+                overflow: "hiddan",
+              }}
+            >
+              <img
+                src={itfn}
+                style={{
+                  width: "inherit",
+                  height: "inherit",
+                  borderRadius: "10px",
+                }}
+                alt="clinet-logo"
+              />
+            </Box>
+          </Tooltip>
 
-          <Box
-            sx={{
-              width: { xs: "150px", md: "100px", lg: "150px" },
-              marginTop: "20px",
-            }}
+          <Tooltip
+            title="Digital Saw Social Media Agency"
+            placement="right-start"
           >
-            <img
-              src={saw}
-              style={{ width: "inherit", height: "inherit" }}
-              alt="clinet-logo"
-            />
-          </Box>
+            <Box
+              sx={{
+                width: { xs: "150px", md: "100px", lg: "150px" },
+                marginTop: "20px",
+              }}
+            >
+              <img
+                src={saw}
+                style={{ width: "inherit", height: "inherit" }}
+                alt="clinet-logo"
+              />
+            </Box>
+          </Tooltip>
 
-          <Box
-            sx={{
-              width: { xs: "150px", md: "100px", lg: "150px" },
-              marginTop: "20px",
-            }}
+          <Tooltip
+            title="Kaung Kaday Kyawl Construction Company"
+            placement="right-start"
           >
-            <img
-              src={KKK}
-              style={{ width: "inherit", height: "inherit" }}
-              alt="clinet-logo"
-            />
-          </Box>
+            <Box
+              sx={{
+                width: { xs: "150px", md: "100px", lg: "150px" },
+                marginTop: "20px",
+              }}
+            >
+              <img
+                src={KKK}
+                style={{ width: "inherit", height: "inherit" }}
+                alt="clinet-logo"
+              />
+            </Box>
+          </Tooltip>
         </Box>
       </Box>
     </div>
