@@ -25,14 +25,15 @@ function WhoAreWe() {
         </Grid>
         <Grid item>
           <p className="whocontent">
-            OTAS Co.,Ltd. was established in 2021. We started as a group of
-            fresh graduate and self-taught programmers but managed to build a
-            team that is now powerful enough to develop effective and efficient
-            IT products and provide client-tailored services. We have completed
-            a number of both outsourced and in-house projects during the past 2
-            years. Big and Small. Easy and Complex. We are never afraid to fail
-            if this will lead us to learn something new and expand our
-            professional and personal horizons.
+            OTAS Co., Ltd. was established in 2021. We began as a group of fresh
+            graduates, self-taught developers, and experienced professionals.
+            Over the past 3 years, we have built a powerful team capable of
+            developing effective and efficient IT products while providing
+            client-tailored services. We have successfully completed a range of
+            outsourced and in-house projects, both big and small, simple and
+            complex. We embrace challenges and are never afraid to fail if it
+            leads to learning something new and expanding our professional and
+            personal horizons.
           </p>
         </Grid>
         <Grid item xs={12} md={6} sx={{ marginTop: "50px" }}>
