@@ -1,12 +1,14 @@
 import { Box } from "@mui/material";
-import Navbar from "./components/navbar/Navbar";
-import HeroBanner from "./components/herobanner/HeroBanner";
-import WhoAreWe from "./components/whoAreWe/WhoAreWe";
-import ServiceWeProvide from "./components/serviceWeProvide/ServiceWeProvide";
-import DevProcess from "./components/developmentProcess/DevProcess";
-import FaqSection from "./components/faq/FaqSection";
-import Footer from "./components/footer/Footer";
-import OurClient from "./components/ourclient/OurClient";
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Link,
+  Routes,
+} from "react-router-dom";
+import Home from "./pages/Home";
+import EmployeeDetail from "./pages/EmployeeDetail";
 
 function App() {
   // const scrollToTop = () => {
@@ -14,14 +16,12 @@ function App() {
   // };
   return (
     <Box sx={{ overflowX: "hidden" }}>
-      <Navbar />
-      <HeroBanner />
-      <WhoAreWe />
-      <ServiceWeProvide />
-      <DevProcess />
-      <OurClient />
-      <FaqSection />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/employee/:id" element={<EmployeeDetail />} />
+        </Routes>
+      </Router>
     </Box>
   );
 }

@@ -126,7 +126,7 @@ function OurClient() {
             lg={2}
             sx={{ display: "flex", justifyContent: "center" }}
           >
-            <Tooltip title="Changan Auto Myanmar" placement="right-start">
+            <Tooltip title="Live Code Myanmar" placement="right-start">
               <Button
                 sx={{
                   width: "150px",
