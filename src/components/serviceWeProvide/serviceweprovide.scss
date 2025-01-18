@@ -24,7 +24,7 @@
   margin-top: 50px;
 
   span {
-    // @include FontStyle;
+    @include FontStyle;
     // @include LightStyle;
     color: $LightBlue;
     font-size: 32px;

@@ -1,10 +1,11 @@
 @import "./../../variable/variable.scss";
 
 .whocontainer {
-  width: 100%;
+  // width: 100%;
+  // background-color: red;
   //   height: 100vh;
   background: $BackgroudColor;
-  padding: 80px 100px 80px 100px;
+  padding: 50px 100px 50px 100px;
   //   overflow-x: hidden;
 }
 
@@ -18,6 +19,7 @@
   @include FontStyleLight;
   font-family: $QuattrocentoFont;
   font-size: 24px;
+  line-height: 2;
 }
 
 .title {
@@ -72,6 +74,7 @@
 
   .whoheader {
     font-size: 32px;
+    margin-bottom: 50px;
   }
 
   .whocontent {

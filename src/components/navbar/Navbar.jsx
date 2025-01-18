@@ -2,7 +2,7 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import CssBaseline from "@mui/material/CssBaseline";
+// import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
@@ -104,11 +104,17 @@ function Navbar(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
-      <CssBaseline />
+    <Box sx={{ display: "flex", background: "red" }}>
+      {/* <CssBaseline /> */}
       <AppBar
         component="nav"
-        sx={{ backgroundColor: "#222222", boxShadow: "none" }}
+        sx={{
+          backgroundColor: "#222222",
+          margin: "0",
+          boxShadow: "none",
+          paddingX: { xs: "0", sm: "60px" },
+          paddingY: "0",
+        }}
       >
         <Toolbar>
           <Link
@@ -121,7 +127,12 @@ function Navbar(props) {
             <img
               src={logo}
               alt="logo"
-              style={{ width: "70px", height: "70px", marginTop: "10px" }}
+              style={{
+                width: "100px",
+                // backgroundColor: "red",
+                height: "90px",
+                marginTop: "10px",
+              }}
             />
           </Link>
           <Box
@@ -154,7 +165,7 @@ function Navbar(props) {
             </Link>
 
             <Link
-              // activeClass="active"
+              activeClass="active"
               to="Services"
               spy={false}
               smooth={true}
