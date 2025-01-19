@@ -207,6 +207,7 @@ function OurClient() {
                     width: "inherit",
                     // height: "inherit",
                     borderRadius: "10px",
+
                     // backgroundColor: "white",
                   }}
                   alt="Live Code Myanmar"
