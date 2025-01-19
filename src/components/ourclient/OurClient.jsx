@@ -111,7 +111,7 @@ function OurClient() {
                     overflow: "hidden",
                     background: "black",
                     "&:hover": {
-                      backgroundColor: "white",
+                      scale: 1.1,
                     },
                   }}
                   href={client.link}
@@ -195,7 +195,7 @@ function OurClient() {
                   overflow: "hidden",
                   background: "white",
                   "&:hover": {
-                    backgroundColor: "white",
+                    scale: 1.1,
                   },
                 }}
                 href="https://www.facebook.com/livecodemyanmar"
@@ -237,7 +237,7 @@ function OurClient() {
                   overflow: "hidden",
                   background: "white",
                   "&:hover": {
-                    backgroundColor: "white",
+                    scale: 1.1,
                   },
                 }}
                 href="https://www.facebook.com/photo/?fbid=241537781841893&set=a.182462111082794"
