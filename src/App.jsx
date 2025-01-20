@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home";
 import EmployeeDetail from "./pages/EmployeeDetail";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   // const scrollToTop = () => {
@@ -16,6 +17,7 @@ function App() {
   // };
   return (
     <Box sx={{ overflowX: "hidden" }}>
+      <Analytics />
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
