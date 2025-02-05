@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Grid, Avatar } from "@mui/material";
 import { motion } from "framer-motion";
-import aao from "./../assets/image/employee/aao-removebg-preview.png";
+import aao from "./../assets/image/employee/aao.jpg";
 import tso from "./../assets/image/employee/tso.jpg";
 import wint from "./../assets/image/employee/wnt.jpg";
 import hso from "./../assets/image/employee/hso.jpg";
