@@ -9,6 +9,8 @@ import changan from "./../../assets/image/clientLogo/changan-new-logo.png";
 import livecode from "./../../assets/image/livecode.png";
 import caremel from "./../../assets/image/clientLogo/logo.png";
 import meme from "./../../assets/image/clientLogo/mem.jpg";
+import meg from "./../../assets/image/clientLogo/meg.png";
+import suzuki from "./../../assets/image/clientLogo/mega6.png";
 
 function OurClient() {
   const controls = useAnimation();
@@ -246,6 +248,90 @@ function OurClient() {
               >
                 <img
                   src={meme}
+                  style={{
+                    width: "inherit",
+                    // height: "inherit",
+                    borderRadius: "10px",
+                    // backgroundColor: "white",
+                  }}
+                  alt="meme"
+                />
+              </Button>
+            </motion.div>
+          </Tooltip>
+        </Grid>
+        <Grid
+          item
+          xs={6}
+          md={3}
+          lg={2}
+          sx={{ display: "flex", justifyContent: "center" }}
+        >
+          <Tooltip title="medical Education guild" placement="right-start">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={controls}
+              transition={{ duration: 0.5, delay: 0.2 + 5 * 0.1 }}
+            >
+              <Button
+                sx={{
+                  width: "150px",
+                  height: "150px",
+                  marginTop: "20px",
+                  borderRadius: "10px",
+                  overflow: "hidden",
+                  background: "white",
+                  "&:hover": {
+                    scale: 1.1,
+                  },
+                }}
+                href="https://www.mededuguild.com/"
+                target="_blank"
+              >
+                <img
+                  src={meg}
+                  style={{
+                    width: "inherit",
+                    // height: "inherit",
+                    borderRadius: "10px",
+                    // backgroundColor: "white",
+                  }}
+                  alt="meme"
+                />
+              </Button>
+            </motion.div>
+          </Tooltip>
+        </Grid>
+        <Grid
+          item
+          xs={6}
+          md={3}
+          lg={2}
+          sx={{ display: "flex", justifyContent: "center" }}
+        >
+          <Tooltip title="MeMe Cosmetics" placement="right-start">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={controls}
+              transition={{ duration: 0.5, delay: 0.2 + 5 * 0.1 }}
+            >
+              <Button
+                sx={{
+                  width: "150px",
+                  height: "150px",
+                  marginTop: "20px",
+                  borderRadius: "10px",
+                  overflow: "hidden",
+                  background: "black",
+                  "&:hover": {
+                    scale: 1.1,
+                  },
+                }}
+                href="https://www.facebook.com/suzukimega6.spt"
+                target="_blank"
+              >
+                <img
+                  src={suzuki}
                   style={{
                     width: "inherit",
                     // height: "inherit",

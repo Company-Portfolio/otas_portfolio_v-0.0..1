@@ -23,8 +23,8 @@ function Footer() {
               fontSize: { sm: "30px", lg: "48px" },
             }}
           >
-            <a href="tel:09754007485" className="phone">
-              09 75 4007 485
+            <a href="tel:+959970577147" className="phone">
+              09 970577147
             </a>
             <a href="mailto:info@otastechsolutions.com" className="email">
               <img src={email} alt="email" className="icon" />

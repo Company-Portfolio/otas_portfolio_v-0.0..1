@@ -48,7 +48,7 @@ function HeroBanner() {
           variants={variants}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <a href="https://www.facebook.com/messages/t/121899224338902">
+          <a target="_blank" href="https://www.facebook.com/otastechsolutions">
             Contact Us
           </a>
         </motion.div>
