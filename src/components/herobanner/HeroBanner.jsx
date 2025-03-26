@@ -18,8 +18,7 @@ function HeroBanner() {
   // };
 
   return (
-    <Box className="bannerContainer" id="heroBanner">
-      <Box className="backgroundImage"></Box>
+    <Box className="bannerContainer backgroundImage" id="heroBanner">
       <Box className="bannerText">
         <motion.h1
           initial="hidden"
@@ -48,7 +47,7 @@ function HeroBanner() {
           variants={variants}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <a target="_blank" href="https://www.facebook.com/otastechsolutions">
+          <a target="_blank" href="https://www.facebook.com/otastechsolutions/">
             Contact Us
           </a>
         </motion.div>

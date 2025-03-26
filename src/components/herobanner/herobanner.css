@@ -13,12 +13,9 @@
 }
 
 .backgroundImage {
-  width: 100%;
-  height: 100vh;
   background-image: url("./../../assets/image/Polygon.png");
-  position: absolute;
-  top: 0px;
-  left: 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .bannerText {
@@ -63,7 +60,7 @@
 
 @media screen and (max-width: 600px) {
   .backgroundImage {
-    left: 10%;
+    left: 0;
   }
   .bannerText {
     padding-left: 10px;
@@ -79,4 +76,4 @@
     font-weight: bold;
     color: #fff;
   }
-}/*# sourceMappingURL=herobanner.css.map */
+} /*# sourceMappingURL=herobanner.css.map */
