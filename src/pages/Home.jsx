@@ -7,6 +7,7 @@ import DevProcess from "./../components/developmentProcess/DevProcess";
 import FaqSection from "./../components/faq/FaqSection";
 import Footer from "./../components/footer/Footer";
 import OurClient from "./../components/ourclient/OurClient";
+import ChatWidget from "./../components/ChatWidget";
 
 function Home() {
   return (
