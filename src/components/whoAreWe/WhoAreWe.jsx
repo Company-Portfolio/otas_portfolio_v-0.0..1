@@ -68,15 +68,16 @@ function WhoAreWe() {
             animate={controls}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            OTAS Co., Ltd. was established in 2021. We began as a group of fresh
-            graduates, self-taught developers, and experienced professionals.
-            Over the past 3 years, we have built a powerful team capable of
-            developing effective and efficient IT products while providing
-            client-tailored services. We have successfully completed a range of
-            outsourced and in-house projects, both big and small, simple and
-            complex. We embrace challenges and are never afraid to fail if it
-            leads to learning something new and expanding our professional and
-            personal horizons.
+            OTAS Co., Ltd. was established in 2021. We began as a team of
+            experienced professionals, followed by self-taught developers and
+            fresh graduates—united by a shared commitment to trust and quality.
+            Over the past 4 years, we have grown into a powerful organization
+            capable of developing effective and efficient IT products, as well
+            as delivering outsourced projects, in-house solutions, and
+            industry-ready custom software and platforms business. We’ve
+            successfully completed initiatives both large and small, simple and
+            complex. We embrace challenges and welcome the opportunity to learn
+            and expand our expertise with each project.
           </motion.p>
         </Grid>
 
@@ -97,7 +98,7 @@ function WhoAreWe() {
             animate={controls}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            Empower through Innovation: to empower businesses through innovative
+            Empower through Innovation, to empower businesses through innovative
             solutions. We strive to break new ground, leveraging cutting-edge
             technologies to propel our clients towards success and
             transformation.

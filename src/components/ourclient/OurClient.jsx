@@ -11,6 +11,7 @@ import caremel from "./../../assets/image/clientLogo/logo.png";
 import meme from "./../../assets/image/clientLogo/mem.jpg";
 import meg from "./../../assets/image/clientLogo/meg.png";
 import suzuki from "./../../assets/image/clientLogo/mega6.png";
+import okGroupOfCompanies from "./../../assets/image/clientLogo/okgroupofcompanies.jpg";
 
 function OurClient() {
   const controls = useAnimation();
@@ -53,8 +54,10 @@ function OurClient() {
         animate={controls}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        We are proud to collaborate with a diverse range of clients, from
-        innovative startups to established companies.
+        We are proud to collaborate with a diverse range of
+        organizations—including innovative startups, established enterprises,
+        and corporate groups—delivering tailored solutions that drive growth and
+        efficiency across every level of business.
       </motion.p>
       <Grid container spacing={2}>
         {[
@@ -87,7 +90,13 @@ function OurClient() {
             src: charming,
             alt: "Charming Bussiness Group",
             tooltip: "Charming Bussiness Group",
-            link: "https://www.charmingbusinessgroup.com/",
+            // link: "https://www.charmingbusinessgroup.com/",
+          },
+          {
+            src: okGroupOfCompanies,
+            alt: "OK Group of Companies",
+            tooltip: "OK Group of Companies",
+            // link: "https://www.okgroupofcompanies.com/",
           },
         ].map((client, index) => (
           <Grid
