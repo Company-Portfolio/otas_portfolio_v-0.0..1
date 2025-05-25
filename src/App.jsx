@@ -1,12 +1,6 @@
 import { Box } from "@mui/material";
 
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Link,
-  Routes,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import EmployeeDetail from "./pages/EmployeeDetail";
 import { Analytics } from "@vercel/analytics/react";

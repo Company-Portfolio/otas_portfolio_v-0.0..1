@@ -35,6 +35,7 @@ function HeroBanner() {
           exit={{ opacity: 0, x: 200 }} // Exit animation
           transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }} // Transition duration
           className="bannerDescription"
+          style={{ marginBottom: "3rem" }}
         >
           With a client-focused approach, our seasoned team ensures <br />
           each product aligns perfectly with your goals. Let’s collaborate{" "}
@@ -47,7 +48,11 @@ function HeroBanner() {
           variants={variants}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <a target="_blank" href="https://www.facebook.com/otastechsolutions/">
+          <a
+            target="_blank"
+            href="https://www.facebook.com/otastechsolutions/"
+            rel="noopener noreferrer"
+          >
             Contact Us
           </a>
         </motion.div>

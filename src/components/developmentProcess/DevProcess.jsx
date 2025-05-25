@@ -47,7 +47,7 @@ function DevProcess() {
         to a seamless transfer of superior products for your business.
       </motion.p>
 
-      <Box sx={{ padding: { xs: "30px", lg: "50px 135px" } }}>
+      <Box sx={{ padding: { xs: "30px", lg: "50px" } }}>
         {[
           // Mapping through the processes for brevity and animation
           {
@@ -81,38 +81,47 @@ function DevProcess() {
             image: dev1,
           },
         ].map((process, index) => (
-          <Grid container key={index}>
-            <Grid item xs={12} md={3} lg={2} className="devImage">
-              <motion.h3
-                initial={{ opacity: 0, y: 20 }}
-                animate={controls}
-                transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-              >
-                {process.title}
-              </motion.h3>
-              <p>
-                <motion.img
-                  src={process.image}
-                  alt={process.title.toLowerCase()}
-                  initial={{ opacity: 0, scale: 0.95 }}
+          <Grid container key={index} style={{ marginBottom: "20px" }}>
+            <Grid
+              item
+              xs={12}
+              // md={3}
+              lg={2}
+
+              // style={{ background: "red" }}
+            >
+              <div className="devImage">
+                <motion.h3
+                  initial={{ opacity: 0, y: 20 }}
                   animate={controls}
-                  transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
-                />
-                {process.title === "Process 1"
-                  ? " Research"
-                  : process.title === "Process 2"
-                  ? " Design"
-                  : process.title === "Process 3"
-                  ? " Develop"
-                  : process.title === "Process 4"
-                  ? " Testing"
-                  : " Deliver"}
-              </p>
+                  transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
+                >
+                  {process.title}
+                </motion.h3>
+                <p>
+                  <motion.img
+                    src={process.image}
+                    alt={process.title.toLowerCase()}
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={controls}
+                    transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
+                  />
+                  {process.title === "Process 1"
+                    ? " Research"
+                    : process.title === "Process 2"
+                    ? " Design"
+                    : process.title === "Process 3"
+                    ? " Develop"
+                    : process.title === "Process 4"
+                    ? " Testing"
+                    : " Deliver"}
+                </p>
+              </div>
             </Grid>
-            <Grid item xs={12} md={9} lg={10} className="devContent">
+            <Grid item xs={12} lg={10} className="devContent">
               <Box
                 className="line"
-                sx={{ display: { xs: "none", md: "flex" } }}
+                sx={{ display: { xs: "none", lg: "flex" } }}
               >
                 <div className="circle"></div>
                 <div className="stick"></div>

@@ -12,7 +12,7 @@ import "./accordian.css";
 function AboutAccordian() {
   return (
     <Grid container sx={{ display: "flex", justifyContent: "center" }}>
-      <Grid item xs={12} md={8} sx={{ marginY: "20px" }}>
+      <Grid item xs={12} md={12} lg={8} sx={{ marginY: "20px" }}>
         <Accordion sx={{ borderRadius: "15px", overflow: "hidden" }}>
           <AccordionSummary
             expandIcon={<ArrowDropDownIcon sx={{ color: "#fff" }} />}
@@ -32,7 +32,7 @@ function AboutAccordian() {
         </Accordion>
       </Grid>
 
-      <Grid item xs={12} md={8} sx={{ marginY: "20px" }}>
+      <Grid item xs={12} md={12} lg={8} sx={{ marginY: "20px" }}>
         <Accordion sx={{ borderRadius: "15px", overflow: "hidden" }}>
           <AccordionSummary
             expandIcon={<ArrowDropDownIcon sx={{ color: "#fff" }} />}
@@ -53,7 +53,7 @@ function AboutAccordian() {
         </Accordion>
       </Grid>
 
-      <Grid item xs={12} md={8} sx={{ marginY: "20px" }}>
+      <Grid item xs={12} md={12} lg={8} sx={{ marginY: "20px" }}>
         <Accordion sx={{ borderRadius: "15px", overflow: "hidden" }}>
           <AccordionSummary
             expandIcon={<ArrowDropDownIcon sx={{ color: "#fff" }} />}

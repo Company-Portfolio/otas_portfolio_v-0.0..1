@@ -1,17 +1,17 @@
 import { Box, Button, Grid, Tooltip } from "@mui/material";
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion"; // Importing Framer Motion components
-import itfn from "./../../assets/image/internationalfocuslogo.jpg";
-import KKK from "./../../assets/image/KKK.png";
-import saw from "./../../assets/image/digitalsaw.png";
-import charming from "./../../assets/image/changmin.webp";
-import changan from "./../../assets/image/clientLogo/changan-new-logo.png";
-import livecode from "./../../assets/image/livecode.png";
-import caremel from "./../../assets/image/clientLogo/logo.png";
-import meme from "./../../assets/image/clientLogo/mem.jpg";
-import meg from "./../../assets/image/clientLogo/meg.png";
-import suzuki from "./../../assets/image/clientLogo/mega6.png";
-import okGroupOfCompanies from "./../../assets/image/clientLogo/okgroupofcompanies.jpg";
+import itfn from "./../../assets/image/clientLogo/client5.svg";
+import KKK from "./../../assets/image/clientLogo/client2.svg";
+import saw from "./../../assets/image/clientLogo/client4.svg";
+import charming from "./../../assets/image/clientLogo/client6.svg";
+import changan from "./../../assets/image/clientLogo/client1.svg";
+import livecode from "./../../assets/image/clientLogo/client9.svg";
+import caremel from "./../../assets/image/clientLogo/client8.svg";
+// import meme from "./../../assets/image/clientLogo/client8.svg";
+// import meg from "./../../assets/image/clientLogo/client9.svg";
+import suzuki from "./../../assets/image/clientLogo/client3.svg";
+import okGroupOfCompanies from "./../../assets/image/clientLogo/client7.svg";
 
 function OurClient() {
   const controls = useAnimation();
@@ -45,6 +45,7 @@ function OurClient() {
         initial={{ opacity: 0, y: 30 }}
         animate={controls}
         transition={{ duration: 0.5 }}
+        style={{ marginTop: "5rem" }}
       >
         Our Clients
       </motion.h1>
@@ -53,306 +54,169 @@ function OurClient() {
         initial={{ opacity: 0, y: 30 }}
         animate={controls}
         transition={{ duration: 0.5, delay: 0.2 }}
+        style={{ marginBottom: "5rem" }}
       >
-        We are proud to collaborate with a diverse range of
-        organizations—including innovative startups, established enterprises,
-        and corporate groups—delivering tailored solutions that drive growth and
-        efficiency across every level of business.
+        Our product development process ensures precision and quality, leading
+        to a seamless transfer of superior products for your business.
       </motion.p>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} style={{ justifyContent: "center" }}>
         {[
           {
             src: changan,
             alt: "Changan Auto Myanmar",
             tooltip: "Changan Auto Myanmar",
             link: "https://www.facebook.com/changanmyanmarmotor",
-          },
-          {
-            src: itfn,
-            alt: "International Focus Oversea Employment Agency",
-            tooltip: "International Focus Oversea Employment Agency",
-            link: "https://www.facebook.com/profile.php?id=100057098965784",
-          },
-          {
-            src: saw,
-            alt: "Digital Saw Social Media Agency",
-            tooltip: "Digital Saw Social Media Agency",
-            link: "https://www.facebook.com/digitalsaw9",
+            title: (
+              <span>
+                Changan <br /> Myanmar
+              </span>
+            ),
           },
           {
             src: KKK,
             alt: "Kaung Kaday Kyawl Construction Company",
             tooltip: "Kaung Kaday Kyawl Construction Company",
             link: "https://www.facebook.com/kaungkadaykyawl",
+            title: <span>Kaung Kaday Kyawl Construction</span>,
           },
-
+          {
+            src: suzuki,
+            alt: "Suzuki Myanmar",
+            tooltip: "Suzuki Myanmar",
+            // link: "https://www.okgroupofcompanies.com/",
+            title: (
+              <span>
+                Suzuki Myanmar 6 <br /> Car Showroom
+              </span>
+            ),
+          },
+          {
+            src: saw,
+            alt: "Digital Saw Social Media Agency",
+            tooltip: "Digital Saw Social Media Agency",
+            link: "https://www.facebook.com/digitalsaw9",
+            title: (
+              <span>
+                Digital Saw <br /> Marketing Agency
+              </span>
+            ),
+          },
+          {
+            src: itfn,
+            alt: "International Focus Oversea Employment Agency",
+            tooltip: "International Focus Oversea Employment Agency",
+            link: "https://www.facebook.com/profile.php?id=100057098965784",
+            title: (
+              <span>
+                International <br /> Focus
+              </span>
+            ),
+          },
           {
             src: charming,
             alt: "Charming Bussiness Group",
             tooltip: "Charming Bussiness Group",
             // link: "https://www.charmingbusinessgroup.com/",
+            title: (
+              <span>
+                Charming <br /> Business Group
+              </span>
+            ),
           },
           {
             src: okGroupOfCompanies,
             alt: "OK Group of Companies",
             tooltip: "OK Group of Companies",
             // link: "https://www.okgroupofcompanies.com/",
+            title: (
+              <span>
+                OK Group of <br /> Companies
+              </span>
+            ),
+          },
+
+          {
+            src: livecode,
+            alt: "Live Code Myanmar",
+            tooltip: "Live Code Myanmar",
+            // link: "https://www.okgroupofcompanies.com/",
+            title: (
+              <span>
+                Live Code <br /> Myanmar
+              </span>
+            ),
+          },
+          {
+            src: caremel,
+            alt: "Care Mel",
+            tooltip: "Care Mel",
+            // link: "https://www.okgroupofcompanies.com/",
+            title: <span>Care Mel</span>,
           },
         ].map((client, index) => (
           <Grid
             item
-            xs={6}
-            md={3}
-            lg={2}
-            sx={{ display: "flex", justifyContent: "center" }}
+            // lg={2.5}
+            sx={{
+              flexBasis: { xs: "50%", md: "30%", lg: "20%" }, // 100% / 5 items
+              maxWidth: { xs: "50%", md: "30%", lg: "20%" },
+            }}
             key={index}
           >
-            <Tooltip title={client.tooltip} placement="right-start">
-              <motion.div
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={controls}
+              transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <Button
+                sx={{
+                  width: "150px",
+                  height: "150px",
+                  marginTop: "20px",
+                  overflow: "hidden",
+                  background: "transparent",
+                  "&:hover": {
+                    transform: "scale(1.1)",
+                    transition: "all 0.3s ease",
+                    background: "transparent",
+                  },
+                }}
+                href={client.link}
+                target="_blank"
+              >
+                <img
+                  src={client.src}
+                  style={{
+                    width: "inherit",
+                    height: "inherit",
+                    borderRadius: "10px",
+                  }}
+                  alt={client.alt}
+                />
+              </Button>
+              <motion.h3
                 initial={{ opacity: 0, y: 30 }}
                 animate={controls}
                 transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
+                style={{
+                  marginTop: "10px",
+                  color: "white",
+                  textTransform: "uppercase",
+                  textAlign: "center",
+                }}
+                className="inter"
               >
-                <Button
-                  sx={{
-                    width: "150px",
-                    height: "150px",
-                    marginTop: "20px",
-                    borderRadius: "10px",
-                    overflow: "hidden",
-                    background: "black",
-                    "&:hover": {
-                      scale: 1.1,
-                    },
-                  }}
-                  href={client.link}
-                  target="_blank"
-                >
-                  <img
-                    src={client.src}
-                    style={{
-                      width: "inherit",
-                      height: "inherit",
-                      borderRadius: "10px",
-                    }}
-                    alt={client.alt}
-                  />
-                </Button>
-              </motion.div>
-            </Tooltip>
+                {client.title}
+              </motion.h3>
+            </motion.div>
           </Grid>
         ))}
-        <Grid
-          item
-          xs={6}
-          md={3}
-          lg={2}
-          sx={{ display: "flex", justifyContent: "center" }}
-        >
-          <Tooltip title="Care Mel" placement="right-start">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={controls}
-              transition={{ duration: 0.5, delay: 0.2 + 5 * 0.1 }}
-            >
-              <Button
-                sx={{
-                  width: "150px",
-                  height: "150px",
-                  marginTop: "20px",
-                  borderRadius: "10px",
-                  overflow: "hidden",
-                  background: "white",
-                  "&:hover": {
-                    backgroundColor: "white",
-                  },
-                }}
-                href="https://www.facebook.com/caremel122023?mibextid=ZbWKwL"
-                target="_blank"
-              >
-                <img
-                  src={caremel}
-                  style={{
-                    width: "100px",
-                    // height: "inherit",
-                    borderRadius: "10px",
-                    // backgroundColor: "white",
-                  }}
-                  alt="Caremel"
-                />
-              </Button>
-            </motion.div>
-          </Tooltip>
-        </Grid>
-        <Grid
-          item
-          xs={6}
-          md={3}
-          lg={2}
-          sx={{ display: "flex", justifyContent: "center" }}
-        >
-          <Tooltip title="Live Code Myanmar" placement="right-start">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={controls}
-              transition={{ duration: 0.5, delay: 0.2 + 5 * 0.1 }}
-            >
-              <Button
-                sx={{
-                  width: "150px",
-                  height: "150px",
-                  marginTop: "20px",
-                  borderRadius: "10px",
-                  overflow: "hidden",
-                  background: "white",
-                  "&:hover": {
-                    scale: 1.1,
-                  },
-                }}
-                href="https://www.facebook.com/livecodemyanmar"
-                target="_blank"
-              >
-                <img
-                  src={livecode}
-                  style={{
-                    width: "inherit",
-                    // height: "inherit",
-                    borderRadius: "10px",
-
-                    // backgroundColor: "white",
-                  }}
-                  alt="Live Code Myanmar"
-                />
-              </Button>
-            </motion.div>
-          </Tooltip>
-        </Grid>
-        <Grid
-          item
-          xs={6}
-          md={3}
-          lg={2}
-          sx={{ display: "flex", justifyContent: "center" }}
-        >
-          <Tooltip title="MeMe Cosmetics" placement="right-start">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={controls}
-              transition={{ duration: 0.5, delay: 0.2 + 5 * 0.1 }}
-            >
-              <Button
-                sx={{
-                  width: "150px",
-                  height: "150px",
-                  marginTop: "20px",
-                  borderRadius: "10px",
-                  overflow: "hidden",
-                  background: "white",
-                  "&:hover": {
-                    scale: 1.1,
-                  },
-                }}
-                href="https://www.facebook.com/photo/?fbid=241537781841893&set=a.182462111082794"
-                target="_blank"
-              >
-                <img
-                  src={meme}
-                  style={{
-                    width: "inherit",
-                    // height: "inherit",
-                    borderRadius: "10px",
-                    // backgroundColor: "white",
-                  }}
-                  alt="meme"
-                />
-              </Button>
-            </motion.div>
-          </Tooltip>
-        </Grid>
-        <Grid
-          item
-          xs={6}
-          md={3}
-          lg={2}
-          sx={{ display: "flex", justifyContent: "center" }}
-        >
-          <Tooltip title="medical Education guild" placement="right-start">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={controls}
-              transition={{ duration: 0.5, delay: 0.2 + 5 * 0.1 }}
-            >
-              <Button
-                sx={{
-                  width: "150px",
-                  height: "150px",
-                  marginTop: "20px",
-                  borderRadius: "10px",
-                  overflow: "hidden",
-                  background: "white",
-                  "&:hover": {
-                    scale: 1.1,
-                  },
-                }}
-                href="https://www.mededuguild.com/"
-                target="_blank"
-              >
-                <img
-                  src={meg}
-                  style={{
-                    width: "inherit",
-                    // height: "inherit",
-                    borderRadius: "10px",
-                    // backgroundColor: "white",
-                  }}
-                  alt="meme"
-                />
-              </Button>
-            </motion.div>
-          </Tooltip>
-        </Grid>
-        <Grid
-          item
-          xs={6}
-          md={3}
-          lg={2}
-          sx={{ display: "flex", justifyContent: "center" }}
-        >
-          <Tooltip title="MeMe Cosmetics" placement="right-start">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={controls}
-              transition={{ duration: 0.5, delay: 0.2 + 5 * 0.1 }}
-            >
-              <Button
-                sx={{
-                  width: "150px",
-                  height: "150px",
-                  marginTop: "20px",
-                  borderRadius: "10px",
-                  overflow: "hidden",
-                  background: "black",
-                  "&:hover": {
-                    scale: 1.1,
-                  },
-                }}
-                href="https://www.facebook.com/suzukimega6.spt"
-                target="_blank"
-              >
-                <img
-                  src={suzuki}
-                  style={{
-                    width: "inherit",
-                    // height: "inherit",
-                    borderRadius: "10px",
-                    // backgroundColor: "white",
-                  }}
-                  alt="meme"
-                />
-              </Button>
-            </motion.div>
-          </Tooltip>
-        </Grid>
       </Grid>
     </Box>
   );
