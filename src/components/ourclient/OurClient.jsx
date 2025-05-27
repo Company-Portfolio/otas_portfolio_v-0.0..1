@@ -5,12 +5,11 @@ import itfn from "./../../assets/image/clientLogo/client5.svg";
 import KKK from "./../../assets/image/clientLogo/client2.svg";
 import saw from "./../../assets/image/clientLogo/client4.svg";
 import charming from "./../../assets/image/clientLogo/client6.svg";
-import changan from "./../../assets/image/clientLogo/client1.svg";
+import changan from "./../../assets/image/clientLogo/client11.svg";
 import livecode from "./../../assets/image/clientLogo/client9.svg";
-import caremel from "./../../assets/image/clientLogo/client8.svg";
-// import meme from "./../../assets/image/clientLogo/client8.svg";
-// import meg from "./../../assets/image/clientLogo/client9.svg";
+import caremel from "./../../assets/image/clientLogo/client.svg";
 import suzuki from "./../../assets/image/clientLogo/client3.svg";
+import meg from "./../../assets/image/clientLogo/client10.svg";
 import okGroupOfCompanies from "./../../assets/image/clientLogo/client7.svg";
 
 function OurClient() {
@@ -153,6 +152,17 @@ function OurClient() {
             // link: "https://www.okgroupofcompanies.com/",
             title: <span>Care Mel</span>,
           },
+          {
+            src: meg,
+            alt: "Meg",
+            tooltip: "Meg",
+            // link: "https://www.okgroupofcompanies.com/",
+            title: (
+              <span>
+                Medical <br /> Education Guild
+              </span>
+            ),
+          },
         ].map((client, index) => (
           <Grid
             item
@@ -187,8 +197,6 @@ function OurClient() {
                     background: "transparent",
                   },
                 }}
-                href={client.link}
-                target="_blank"
               >
                 <img
                   src={client.src}
