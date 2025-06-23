@@ -6,6 +6,7 @@ import KKK from "./../../assets/image/clientLogo/client2.svg";
 import saw from "./../../assets/image/clientLogo/client4.svg";
 import charming from "./../../assets/image/clientLogo/client6.svg";
 import changan from "./../../assets/image/clientLogo/client11.svg";
+import uedc from "./../../assets/image/clientLogo/uedc.png";
 import livecode from "./../../assets/image/clientLogo/client9.svg";
 import caremel from "./../../assets/image/clientLogo/client.svg";
 import suzuki from "./../../assets/image/clientLogo/client3.svg";
@@ -58,7 +59,7 @@ function OurClient() {
         Our product development process ensures precision and quality, leading
         to a seamless transfer of superior products for your business.
       </motion.p>
-      <Grid container spacing={2} style={{ justifyContent: "center" }}>
+      <Grid container spacing={2} style={{ justifyContent: "start" }}>
         {[
           {
             src: changan,
@@ -162,6 +163,13 @@ function OurClient() {
                 Medical <br /> Education Guild
               </span>
             ),
+          },
+          {
+            src: uedc,
+            alt: "UEDC",
+            tooltip: "UEDC",
+            // link: "https://www.okgroupofcompanies.com/",
+            title: <span>UEDC Myanmar</span>,
           },
         ].map((client, index) => (
           <Grid
