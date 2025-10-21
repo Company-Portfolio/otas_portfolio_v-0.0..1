@@ -12,6 +12,8 @@ import caremel from "./../../assets/image/clientLogo/client.svg";
 import suzuki from "./../../assets/image/clientLogo/client3.svg";
 import meg from "./../../assets/image/clientLogo/client10.svg";
 import okGroupOfCompanies from "./../../assets/image/clientLogo/client7.svg";
+import funglish from "./../../assets/image/clientLogo/Funglish.png";
+import goldenmyanmar from "./../../assets/image/clientLogo/goldenmyanmar.svg";
 
 function OurClient() {
   const controls = useAnimation();
@@ -94,6 +96,7 @@ function OurClient() {
             src: saw,
             alt: "Digital Saw Social Media Agency",
             tooltip: "Digital Saw Social Media Agency",
+            background: "white",
             link: "https://www.facebook.com/digitalsaw9",
             title: (
               <span>
@@ -105,6 +108,7 @@ function OurClient() {
             src: itfn,
             alt: "International Focus Oversea Employment Agency",
             tooltip: "International Focus Oversea Employment Agency",
+            background: "white",
             link: "https://www.facebook.com/profile.php?id=100057098965784",
             title: (
               <span>
@@ -116,6 +120,7 @@ function OurClient() {
             src: charming,
             alt: "Charming Bussiness Group",
             tooltip: "Charming Bussiness Group",
+            background: "white",
             // link: "https://www.charmingbusinessgroup.com/",
             title: (
               <span>
@@ -157,6 +162,7 @@ function OurClient() {
             src: meg,
             alt: "Meg",
             tooltip: "Meg",
+            background: "white",
             // link: "https://www.okgroupofcompanies.com/",
             title: (
               <span>
@@ -170,6 +176,21 @@ function OurClient() {
             tooltip: "UEDC",
             // link: "https://www.okgroupofcompanies.com/",
             title: <span>UEDC Myanmar</span>,
+          },
+          {
+            src: funglish,
+            alt: "Funglish",
+            tooltip: "Funglish",
+            // link: "https://www.okgroupofcompanies.com/",
+            title: <span>Funglish</span>,
+          },
+          {
+            src: goldenmyanmar,
+            alt: "Golden Myanmar",
+            tooltip: "Golden Myanmar",
+            background: "white",
+            // link: "https://www.okgroupofcompanies.com/",
+            title: <span>Golden Myanmar HR</span>,
           },
         ].map((client, index) => (
           <Grid
@@ -212,6 +233,8 @@ function OurClient() {
                     width: "inherit",
                     height: "inherit",
                     borderRadius: "10px",
+                    background: client?.background,
+                    // background: "white",
                   }}
                   alt={client.alt}
                 />
