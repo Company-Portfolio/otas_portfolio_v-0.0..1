@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Tooltip } from "@mui/material";
+import { Box, Button, Grid } from "@mui/material";
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion"; // Importing Framer Motion components
 import itfn from "./../../assets/image/clientLogo/client5.svg";

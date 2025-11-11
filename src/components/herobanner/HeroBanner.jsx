@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import { delay, motion } from "framer-motion"; // Import motion from framer-motion
+import { motion } from "framer-motion"; // Import motion from framer-motion
 import React from "react";
 
 import "./herobanner.css";
