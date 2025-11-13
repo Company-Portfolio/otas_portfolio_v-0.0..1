@@ -6,9 +6,11 @@ import EmployeeDetail from "./pages/EmployeeDetail";
 import { Analytics } from "@vercel/analytics/react";
 import ReactGA from "react-ga4";
 import { useEffect } from "react";
+import Clarity from "@microsoft/clarity";
 
 function App() {
   useEffect(() => {
+    Clarity.init("u3t4rf0u6b");
     ReactGA.initialize("G-NC35HQJ2JD");
     ReactGA.send({ hitType: "pageview", page: window.location.pathname });
   }, []);
